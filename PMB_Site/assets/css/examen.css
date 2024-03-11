@@ -1,0 +1,25 @@
+#exam_national{
+    background-image:url('../images/main-slider-02.jpg');
+    background-size: cover;
+}
+#caros{
+    height: 150px;
+}
+#exam_militaire{
+    background-image:url('../images/bpms21.jpeg');
+    background-size: cover;
+}
+#deroulement{
+    background-image: url(../images/contact-bg.jpg);
+    background-size: cover;
+}
+.card{
+    height: 43rem;
+    background-color: #212529 !important;
+}
+.card:hover{
+    background-color: rgba(250,250,250,0.1)!important;
+}
+.desc_exam_militaire{
+    display: none;
+}

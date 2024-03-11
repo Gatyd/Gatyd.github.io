@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section id="presentation" class="container-fluid py-5 bg-light">
+    <h1 class="offset-1 text-success">Présentation</h1>
+    <div class="row align-items-center">
+      <p class="origine col-12 col-md-6 fs-5 text-muted" style="display: none;">
+        Créé le 27 mai 1980 par le décret N° 86-154 du 23 avril 1986, le Prytanée Militaire de Bembérèkè est
+         un établissement d'enseignement secondaire spécialisé, à vocation sous-régionale. Il regroupe en son
+          sein des élèves béninois et étrangers venant de dix (10) pays frères et amis, aussi bien de l'Afrique
+           de l'Ouest que de l'Afrique centrale .
+      </p>
+      <div class="col-12 col-md-6">
+        <a href="assets/img/Acceuil/place_a.jpg">
+          <img src="assets/img/Acceuil/place_a.jpg" class="pmb img-fluid zoom" alt="Photo du prytanée Militaire de Bembérèkè">
+        </a>
+      </div>
+    </div>
+</section>
+</body>
+</html>
+
+<script>
+        // set up text to print, each item in array is new line
+        var aText = new Array(
+        "Toute notre expertise investie, pour votre satisfaction...", 
+        );
+        var iSpeed = 160; // time delay of print out
+        var iIndex = 0; // start printing array at this posision
+        var iArrLength = aText[0].length; // the length of the text array
+        var iScrollAt = 10; // start scrolling up at this many lines
+         
+        var iTextPos = 0; // initialise text position
+        var sContents = ''; // initialise contents variable
+        var iRow; // initialise current row
+         
+        function typewriter()
+        {
+         sContents =  ' ';
+         iRow = Math.max(0, iIndex-iScrollAt);
+         var destination = document.getElementById("typedtext");
+         
+         while ( iRow < iIndex ) {
+          sContents += aText[iRow++] + '<br />';
+         }
+         destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "|";
+         if ( iTextPos++ == iArrLength ) {
+          iTextPos = 0;
+          iIndex++;
+          if ( iIndex != aText.length ) {
+           iArrLength = aText[iIndex].length;
+           setTimeout("typewriter()", 500);
+          }
+         } else {
+          setTimeout("typewriter()", iSpeed);
+         }
+        }
+        typewriter();
+        </script>
+        
+        
+        
+        
+        
+        <style>
+        #typedtext {
+          font-family: 'Waiting for the Sunrise', cursive; 
+          font-size:15px; 
+          color: aliceblue;
+          margin: 0px 20px; 
+          letter-spacing: 2px; 
+          font-weight: bold;
+        }
+        </style>
+
+        

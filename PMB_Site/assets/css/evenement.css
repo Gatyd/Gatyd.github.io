@@ -1,0 +1,6 @@
+.card{
+    background-color: rgba(22,34,57,0.99) !important;
+}
+.evenement,.attributs,.card-text{
+    display: none ;
+}

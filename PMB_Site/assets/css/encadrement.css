@@ -1,0 +1,20 @@
+.academie{
+    background-image: url(../img/Encadrement/fond.jpg);
+    background-size: cover;
+}
+.cursus_militaire{
+    background-image: url(../img/Encadrement/bpms4.jpg);
+    background-size: cover;
+}
+.cycle1{
+    background-image: url(../img/Encadrement/cycle1.jpg);
+    background-size: cover;
+}
+.cycle2{
+    background-image: url(../img/Encadrement/salle3.jpg);
+    background-size: cover;
+}
+.bleuissement{
+    background-image: url(../img/fond_camouflé.jpg);
+    background-size: cover;
+}

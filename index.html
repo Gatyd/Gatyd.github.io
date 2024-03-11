@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/CSS/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/CSS/style.css">
+        <link rel="stylesheet" href="mdi/css/materialdesignicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+        <title>Thierry APLOGAN - Portfolio</title>
+        <style>
+            h1{
+                font-family: 'Roboto';
+            }
+            p{
+                font-family: 'Manrope';
+            }
+        </style>
+    </head>
+    <body class="">
+        <script src="assets/JS/jquery.min.js"></script>
+        <script src="assets/JS/bootstrap.bundle.min.js"></script>
+        <script src="assets/JS/index.js"></script>
+        <header class="py-4">
+            <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand text-uppercase fw-bold text-primary" href="#">
+                        <span class="bg-secondary bg-gradient p-1 rounded-3 text-light">Thierry</span> APLOGAN D.
+                        <!--Bouton qui permet de switcher entre le mode sombre et le mode clair, télécharger sur le site où les codes des éléments de
+                        page web sont déjà écrits et prêt à l'emploi -->
+                        <label class="ui-switch">
+                            <input type="checkbox" id="mode_sombre">
+                            <div class="slider">
+                              <div class="circle"></div>
+                            </div>
+                        </label>                          
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <!--Bouton qui permet de changer la langue, basé sur l'API de google translate-->
+                            <li class="nav-item offset-4 offset-md-0 py-2 py-md-0">
+                                <a class="nav-link link-secondary" href="#a_propos">A propos</a>
+                            </li>
+                            <li class="nav-item offset-4 offset-md-0 py-2 py-md-0">
+                                <a class="nav-link link-secondary" href="#expertise">expertise</a>
+                            </li>
+                            <li class="nav-item offset-4 offset-md-0 py-2 py-md-0">
+                                <a class="nav-link link-secondary" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item offset-4 offset-md-0 py-2 py-md-0">
+                                <a class="nav-link link-secondary" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container-fluid moi pb-5" id="a_propos">
+            <div class="container">
+                <div class="row align-items-center my-2">
+                    <div class="col-12 col-lg-6 pt-3">
+                        <h1 class="nom text-primary">A PROPOS DE MOI</h1>
+                        <p class="ps-4 text-secondary fs-5">Je suis Thierry APLOGAN DJIBODE, 
+                            un développeur passionné par la création d'applications interactives et performantes. 
+                            J'aime résoudre des problèmes techniques complexes et je suis constamment à la recherche de nouvelles 
+                            technologies pour améliorer mes compétences.</p>
+                        <h3 class="text-info col offset-2 mt-5">Objectifs et aspirations</h3>
+                        <p class="ps-4 text-secondary fs-5">Mon objectif est de continuer à approfondir mes connaissances en développement 
+                             et de participer à des projets innovants qui ont un impact positif sur les utilisateurs.
+                             J'aspire à collaborer avec des équipes talentueuses pour relever des défis techniques ambitieux.</p>
+                        <h3 class="text-info col offset-2 mt-5 interet-perso">Intérêts personnels</h3>
+                        <p class="ps-4 text-secondary fs-5">En dehors du développement, je suis un passionné de jeux vidéos 🎮 et 
+                           j'aime beaucoup écouter de la musique 🎵.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6 order-first order-lg-last">
+                        <a href="assets/IMG/moi.png">
+                            <img src="assets/IMG/moi.png" alt="Photo de Thierry APLOGAN" class="" width="100%">
+                        </a>
+                        <a href="#expertise" class="btn btn-primary my-3 btn-expertise">Mon expertise</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="expertise" class="py-5 bg-light">
+            <div class="container my-4">
+                <h1 class="text-primary">Mon expertise</h1>
+                <h3 class="text-secondary col-7 offset-3 my-3">Compétences</h3>
+                <div class="row align-items-center competence py-5">
+                    <a class="developpement_web col-6 offset-3 offset-md-1 col-md-4 col-xl-2 rounded my-3 text-decoration-none text-dark" href="#portfolio">
+                        <p class="fs-4 p-1">Développement de site web statique et d'application web complète.</p>
+                    </a>
+                    <a class="MySQL col-6 offset-3 offset-md-2 offset-xl-1 col-md-4 col-xl-2 rounded my-3 text-decoration-none" href="#gestion_supermarche">
+                        <p class="fs-4 p-1 text-info">Création et administration de Base de données relationnelle.</p>
+                    </a>
+                    <a class="Git col-6 offset-3 offset-md-1 col-md-4 col-xl-2 rounded my-3 text-decoration-none text-dark" href="#travail_equipe">
+                        <p class="fs-4 p-1 ">Travail d'équipe et collaboration sur des projets personnels, professionnels.</p>
+                    </a>
+                    <a class="figma col-6 offset-3 offset-md-2 col-md-4 offset-xl-1 col-xl-2 rounded my-3 text-decoration-none" href="#maquette_appli_location">
+                        <p class="fs-4 p-1 text-light">Création de maquettes prototypes pour application, site web.</p>
+                    </a>
+                </div>
+                <div class="row align-items-center">
+                    <h5 class="col-12 col-md-6 offset-md-3 text-muted my-3">Développement Front-end</h5>
+                </div>
+                <div class="row align-items-center py-5">
+                    <div class="col-12 col-lg-7">
+                        <div class="container-fluid front-competence">
+                            <div class="row align-items-center my-3">
+                                <div class="col-6 col-sm-5 col-xl-3 fs-4 text-info"><span class="mdi mdi-language-html5 mx-3"></span>HTML5</div>
+                                <div class="col">
+                                    <div class="progress" data-bs-toggle="tooltip" title="75%">
+                                        <div class="progress-bar w-75 bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center my-3">
+                                <div class="col-6 col-sm-5 col-xl-3 fs-4 text-info"><span class="mdi mdi-language-css3 mx-3"></span>CSS3</div>
+                                <div class="col">
+                                    <div class="progress" data-bs-toggle="tooltip" title="75%">
+                                        <div class="progress-bar w-75 bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center my-3">
+                                <div class="col-6 col-sm-5 col-xl-3 fs-4 text-info"><span class="mdi mdi-language-javascript mx-3"></span>JS</div>
+                                <div class="col">
+                                    <div class="progress" data-bs-toggle="tooltip" title="50%">
+                                        <div class="progress-bar w-50 bg-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 mt-4 mt-xl-0">
+                        <img src="assets/IMG/Front-end.png" alt="" width="100%" class="front-end-img">
+                    </div>
+                </div>
+                <h5 class="col-12 col-md-6 offset-md-3 text-muted">Frameworks</h5>
+                <div class="row align-items-center mb-3">
+                    <img class="col-4 offset-1 offset-md-1 col-md-3 col-xl-2 rounded my-3" src="assets/IMG/React-icon.svg.png" data-bs-toggle="tooltip"
+                    title="React est un framework javasript utilisé dans la conception d'application web statique, basé sur l'utilisatin des composants réutilisables">
+                    <img class="col-4 offset-1 offset-md-1 col-md-3 col-xl-2 rounded my-3" src="assets/IMG/Bootstrap_logo.svg.png" data-bs-toggle="tooltip"
+                    title="Bootstrap est un framework front-end utilisé pour la creéation de pages web responsives et interractives">
+                    <img class="col-4 offset-1 offset-md-1 col-md-3 col-xl-2 rounded my-3" src="assets/IMG/gsap.png" data-bs-toggle="tooltip"
+                    title="GSAP est un framework javasript utilisé pour l'animation des pages web">
+                </div>
+                <div class="row align-items-center">
+                    <h5 class="col-12 col-md-6 offset-md-4 text-muted mb-4">Back-end</h5>
+                </div>
+                <div class="row align-items-center py-5">
+                    <div class="col-12 col-lg-5 mt-4 mt-xl-0">
+                        <img src="assets/IMG/back-end.jpg" alt="" width="100%" class="back-end-img">
+                    </div>
+                    <div class="col-12 order-first col-lg-7 order-lg-last back-competence">
+                        <div class="container-fluid">
+                            <div class="row align-items-center my-3">
+                                <div class="col-6 col-sm-5 col-xl-3 fs-4 text-info"><span class="mdi mdi-language-python me-2"></span>PYTHON</div>
+                                <div class="col">
+                                    <div class="progress" data-bs-toggle="tooltip" title="75%">
+                                        <div class="progress-bar w-75 bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center my-3">
+                                <div class="col-6 col-sm-5 col-xl-3 fs-4 text-info"><span class="mdi mdi-database-outline mx-2"></span>SQL</div>
+                                <div class="col">
+                                    <div class="progress" data-bs-toggle="tooltip" title="100%">
+                                        <div class="progress-bar w-100 bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center my-3">
+                                <div class="col-6 col-sm-5 col-xl-3 fs-4 text-info"><span class="mdi mdi-language-c ms-2"></span> / <span class="mdi mdi-language-cpp"></span></div>
+                                <div class="col">
+                                    <div class="progress" data-bs-toggle="tooltip" title="50%">
+                                        <div class="progress-bar w-50 bg-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center my-3">
+                                <div class="col-6 col-sm-5 col-xl-3 fs-4 text-info"><span class="mdi mdi-language-java mx-3"></span>Java</div>
+                                <div class="col">
+                                    <div class="progress" data-bs-toggle="tooltip" title="75%">
+                                        <div class="progress-bar w-75 bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="col-12 col-md-6 offset-md-3 text-muted">Frameworks</h5>
+                <div class="row align-items-center mb-3">
+                    <img class="col-4 offset-1 offset-md-1 col-md-3 col-xl-2 rounded my-3" src="assets/IMG/django.png" data-bs-toggle="tooltip"
+                    title="Django est un framework python utilisé pour la création d'application web complète">
+                    <img class="col-4 offset-1 offset-md-1 col-md-3 col-xl-2 rounded my-3" src="assets/IMG/qt.png" data-bs-toggle="tooltip"
+                    title="Qt est un framework qui s'utilise plus avec le language c++ pour la création d'application GUI pour tous types de système d'exploitation">
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="py-5">
+            <div class="container">
+                <h1 class="text-primary">Mon portfolio</h1>
+                <div class="row align-items-center">
+                    <h5 class="col-12 col-md-6 offset-md-3 text-muted">Projets perso et pro</h5>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div class="card m-3" id="pmb">
+                        <div class="row align-items-center">
+                            <img src="PMB_Site/pmb.png" alt="Page d'acceuil du site" class="col-12 col-lg-4">
+                            <div class="col-10 col-lg-7 offset-1 p-4">
+                                <h5 class="text-muted">PMB</h5>
+                                <p class="m-3">Il s'agit d'un site web de présentation d'une école militaire, a travers les six pages de ce site, nous avons
+                                    décrit le curus scolaire, le mode de vie des élèves, les évènements scolaires, les modalités de paiement et plein d'autres.
+                                </p>
+                                <a class="btn btn-info text-light my-3 my-xl-0" href="PMB_Site/index.html">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-3" id="gestion_supermarche">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-4 order-lg-last">
+                                <img src="gestion supermarche/gestion_supermarche.png" alt="Structure de la base de données" class="img-fluid">
+                            </div>
+                            <div class="col-10 col-lg-7 p-4 offset-1">
+                                <h5 class="text-muted">Supermarché</h5>
+                                <p class="m-3">Création et administration d'une base de données d'un système de gestion de Supermarché, relation entre les tables,
+                                    exécution de Requêtes, sécurité des données, etc... <br>
+                                    Fichier <a href="gestion supermarche/gestion_supermarche_test.sql" class="text-decoration-none text-info">sql</a> de la base de données.
+                                </p>
+                                <a class="btn btn-info text-light my-3 my-xl-0" href="gestion supermarche/gestion_supermarche.pdf">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-3" id="maquette_appli_location">
+                        <div class="row align-items-center">
+                            <img src="assets/IMG/maquette_app.png" alt="Vue d'ensemble de toutes les pages de la maquette" class="col-12 col-lg-4">
+                            <div class="col-10 col-lg-7 offset-1 p-4">
+                                <h5 class="text-muted">Maquette d'application mobile</h5>
+                                <p class="m-3">Création d'une maquette pour chaque page d'une application mobile de location de véhicule, avec toutes les fonctionnalités
+                                    qui vont avec, authentification, réservation, informations sur un véhicule, etc...
+                                </p>
+                                <a class="btn btn-info text-light my-3 my-xl-0" href="Maquette appli de location vehicule/app.pdf">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-3" id="travail_equipe">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-4 order-lg-last">
+                                <img src="assets/IMG/equipe.png" alt="Profil github" class="img-fluid">
+                            </div>
+                            <div class="col-10 col-lg-7 p-4 offset-1">
+                                <h5 class="text-muted">Travail d'équipe</h5>
+                                <p class="m-3">J'ai eu a travailler avec plusieurs dévelloppeurs sur des projets plus ou moins lourd et dense à travers github,<br>
+                                    <a href="https://github.com/BlakvGhost/WebP2MS" class="text-decoration-none text-info">WebP2MS</a> : Application web de planification d'emploi pour étudiants et organisateurs de formation ;<br>
+                                    <a href="https://github.com/Celi003/Projet-Java-NetBeans" class="text-decoration-none text-info">Projet-Java-NetBeans</a> : Application pour windows de gestion de stock de Supermarché ;<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-light" id="contact">
+            <div class="container">
+                <h1 class="text-primary">Un nouveau projet ?</h1>
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-5">
+                        <p class=" text-muted">Je serai ravi de mettre mon savoir à votre disposition pour la réalisation de votre projet</p>
+                        <img src="assets/IMG/projet.jpg" width="100%" alt="" class="projet-a-creer">
+                    </div>
+                    <div class="col-12 col-md-5 offset-md-1 mt-4 mt-md-0">
+                        <form action="">
+                            <div class="row">
+                                <label class="col-5 m-2 text-muted">Nom<br>
+                                    <input type="text" class="form-control bg-light">
+                                </label>
+                                <label class="col-6 my-2">Prénoms<br>
+                                    <input type="text" class="form-control bg-light">
+                                </label>
+                            </div>
+                            <div class="row align-items-center">
+                                <label class="col-12 m-2">Email address<br>
+                                    <input type="email" class="form-control bg-light" required>
+                                </label>
+                                <label class="col-12 m-2">Message<br>
+                                    <textarea type="text" class="form-control bg-light" required></textarea>
+                                </label>
+                                <input type="submit" class="btn btn-primary col-6 offset-3 col-md-3 offset-md-5" value="Envoyer">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container">
+            <div class="d-flex flex-column flex-md-row flex-wrap align-items-center justify-content-between">
+                <div class="my-3 my-md-0">
+                    <a class="navbar-brand text-uppercase fw-bold p-4 mx-4 text-primary" href="#">
+                        <span class="bg-secondary bg-gradient p-1 rounded-3 text-light">Thierry</span>APLOGAN D.
+                    </a>
+                </div>
+                <a href="#" class="text-decoration-none link-secondary" data-bs-toggle="modal" data-bs-target="#mentionsLegales">Mentions légales</a>
+                <div class="modal fade" id="mentionsLegales" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Mentions Légales</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <ol>
+                                    <li>Identification du propriétaire</li>
+                                    <p>Ce site est la propriété de Thierry APLOGAN DJIBODE (ci-après dénommé "le propriétaire du site").<br>
+                                        Adresse postale : 358 Cotonou Bénin <br>
+                                        Adresse e-mail de contact : graceaplogan264@gmail.com <br>
+                                        Numéro de téléphone : +229 90180172
+                                    </p>
+                                    <li>Droits d'auteur et droits de reproduction</li>
+                                    <p>Tous les contenus présents sur ce site, y compris, mais sans s'y limiter, le texte,
+                                        les images, les graphiques, les logos et les vidéos, sont la propriété exclusive
+                                        du propriétaire du site, sauf indication contraire. Toute reproduction, distribution,
+                                        modification ou utilisation non autorisée de ces contenus est strictement interdite.
+                                    </p>
+                                    <li>Politique de confidentialité</li>
+                                    <p>Nous respectons la vie privée de nos visiteurs.Lorsque vous visitez mon portfolio , la seule donnée collectée est votre message
+                                        et votre adressemail pour qu'on puisse prendre contact,cette donnée est utilisée pour réfléchir sur comment mené a bien votre projet,
+                                        et protégée car elle est directement envoyé dans ma messagerie , donc vous n'avez aucun soucis a vous faire en ce qui concerne la 
+                                        collecte , l'utilisation et la protection de vos données personnelles.
+                                    </p>
+                                    <li>Clause de non-responsabilité</li>
+                                    <p>Les informations fournies sur ce site sont à titre informatif seulement. Le propriétaire
+                                        du site ne peut être tenu responsable de toute inexactitude ou omission dans les informations
+                                        fournies. L'utilisation des informations présentées sur ce site se fait à vos propres risques.
+                                    </p>
+                                    <li>Juridiction applicable</li>
+                                    <p>Ce site est régi par les lois en vigueur dans le Bénin. Tout litige concernant ce site sera
+                                         soumis à la juridiction exclusive des tribunaux compétents de Cotonou.
+                                    </p>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="me-5 my-3 my-md-0">
+                    <a target="_blank" href="https://github.com/Gatyd" class="link-secondary"><span class="mdi mdi-github fs-4 mx-2"></span></a>
+                    <a target="_blank" href="https://wa.me/+22990180172" class="link-secondary"><span class="mdi mdi-whatsapp fs-4 mx-2"></span></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/thierry-aplogan-djibode-284247286/" class="link-secondary"><span class="mdi mdi-linkedin fs-4 mx-2"></span></a>
+                </div>
+            </div>
+        </footer>
+        <script>
+            var header = document.querySelector('nav');
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var checkbox = document.getElementById("mode_sombre");
+            var fond = document.getElementById("a_propos");
+            var fond_expertise = document.getElementById("expertise"), fond_contact = document.getElementById("contact");
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                // Appliquer le thème sombre à l'application
+                document.documentElement.setAttribute('data-bs-theme', 'dark');
+                fond_expertise.classList.replace("bg-light","fond-noir");
+                fond_contact.classList.replace("bg-light","fond-noir");
+                header.classList.replace("bg-light","bg-dark");
+                fond.className = "moi-dark";
+                checkbox.checked = true;
+            } else {
+                // Appliquer le thème clair ou le thème par défaut à l'application
+                document.documentElement.setAttribute('data-bs-theme', 'light');
+                checkbox.checked = false;
+            }
+            checkbox.addEventListener('change', function() {
+                // Votre code à exécuter lorsque le checkbox est coché ou décoché
+                if (checkbox.checked) {
+                    document.documentElement.setAttribute('data-bs-theme', 'dark');
+                    fond_expertise.classList.replace("bg-light","fond-noir");
+                    fond_contact.classList.replace("bg-light","fond-noir");
+                    header.classList.replace("bg-light","bg-dark");
+                    fond.className = "moi-dark";
+                } else {
+                    document.documentElement.setAttribute('data-bs-theme', 'light');
+                    fond_expertise.classList.replace("fond-noir","bg-light");
+                    fond_contact.classList.replace("fond-noir","bg-light");
+                    header.classList.replace("bg-dark","bg-light");
+                    fond.className = "moi";
+                }
+            });
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
+    </body>
+</html>

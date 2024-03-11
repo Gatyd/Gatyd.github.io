@@ -1,0 +1,27 @@
+.jaune,em,.jaune_s{
+    color: #3cf;
+}
+body{
+    background-image: url(../images/choosing-bg.jpg);
+}
+.jaune:hover{
+    color: #FC3;
+}
+.orange{
+    color:rgb(219, 125, 11);
+}
+p,li{
+    font-size:large;
+}
+.zoom{
+    transition: transform 0.3s;
+}
+.zoom:hover{
+    transform: scale(0.98);
+}
+.buton-bleu{
+    background-color: #3cf !important;
+}
+.buton-bleu:hover{
+    background-color: #FC3 !important;
+}
