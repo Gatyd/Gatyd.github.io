@@ -21,16 +21,11 @@
         </style>
     </head>
     <body class="">
-        <script src="assets/JS/jquery.min.js"></script>
-        <script src="assets/JS/bootstrap.bundle.min.js"></script>
-        <script src="assets/JS/index.js"></script>
         <header class="py-4">
             <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
                 <div class="container">
                     <a class="navbar-brand text-uppercase fw-bold text-primary" href="#">
                         <span class="bg-secondary bg-gradient p-1 rounded-3 text-light">Thierry</span> APLOGAN D.
-                        <!--Bouton qui permet de switcher entre le mode sombre et le mode clair, télécharger sur le site où les codes des éléments de
-                        page web sont déjà écrits et prêt à l'emploi -->
                         <label class="ui-switch">
                             <input type="checkbox" id="mode_sombre">
                             <div class="slider">
@@ -66,44 +61,52 @@
             <div class="container">
                 <div class="row align-items-center my-2">
                     <div class="col-12 col-lg-6 pt-3">
-                        <h1 class="nom text-primary">A PROPOS DE MOI</h1>
-                        <p class="ps-4 text-secondary fs-5">Je suis Thierry APLOGAN DJIBODE, 
-                            un développeur passionné par la création d'applications interactives et performantes. 
-                            J'aime résoudre des problèmes techniques complexes et je suis constamment à la recherche de nouvelles 
-                            technologies pour améliorer mes compétences.</p>
-                        <h3 class="text-info col offset-2 mt-5">Objectifs et aspirations</h3>
-                        <p class="ps-4 text-secondary fs-5">Mon objectif est de continuer à approfondir mes connaissances en développement 
+                        <div class="a_propos">
+                            <h1 class="nom text-primary title_a_propos col-9 col-md-6 col-lg-9">A PROPOS DE MOI</h1>
+                            <p class="ps-4 text-secondary fs-5">Je suis Thierry APLOGAN DJIBODE, 
+                                un développeur passionné par la création d'applications interactives et performantes. 
+                                J'aime résoudre des problèmes techniques complexes et je suis constamment à la recherche de nouvelles 
+                                technologies pour améliorer mes compétences.
+                            </p>
+                        </div>
+                        <div id="objectifs">
+                            <h3 class="text-info col offset-2 mt-5">Objectifs et aspirations</h3>
+                            <p class="ps-4 text-secondary fs-5">Mon objectif est de continuer à approfondir mes connaissances en développement 
                              et de participer à des projets innovants qui ont un impact positif sur les utilisateurs.
-                             J'aspire à collaborer avec des équipes talentueuses pour relever des défis techniques ambitieux.</p>
-                        <h3 class="text-info col offset-2 mt-5 interet-perso">Intérêts personnels</h3>
-                        <p class="ps-4 text-secondary fs-5">En dehors du développement, je suis un passionné de jeux vidéos 🎮 et 
-                           j'aime beaucoup écouter de la musique 🎵.
-                        </p>
+                             J'aspire à collaborer avec des équipes talentueuses pour relever des défis techniques ambitieux.
+                            </p>
+                        </div>
+                        <div id="interets">
+                            <h3 class="text-info col offset-2 mt-5 interet-perso">Intérêts personnels</h3>
+                            <p class="ps-4 text-secondary fs-5">En dehors du développement, je suis un passionné de jeux vidéos 🎮 et 
+                               j'aime beaucoup écouter de la musique 🎵.
+                            </p>
+                        </div>
                     </div>
                     <div class="col-12 col-lg-6 order-first order-lg-last">
                         <a href="assets/IMG/moi.png">
-                            <img src="assets/IMG/moi.png" alt="Photo de Thierry APLOGAN" class="" width="100%">
+                            <img src="assets/IMG/moi.png" alt="Photo de Thierry APLOGAN" class="zoom" width="100%">
                         </a>
                         <a href="#expertise" class="btn btn-primary my-3 btn-expertise">Mon expertise</a>
                     </div>
                 </div>
             </div>
         </div>
-        <section id="expertise" class="py-5 bg-light">
+        <section id="expertise" class="py-5 bg-light container-fluid">
             <div class="container my-4">
-                <h1 class="text-primary">Mon expertise</h1>
+                <h1 class="text-primary title_expertise col-9 col-md-6">Mon expertise</h1>
                 <h3 class="text-secondary col-7 offset-3 my-3">Compétences</h3>
                 <div class="row align-items-center competence py-5">
-                    <a class="developpement_web col-6 offset-3 offset-md-1 col-md-4 col-xl-2 rounded my-3 text-decoration-none text-dark" href="#portfolio">
+                    <a class="compt developpement_web col-6 offset-3 col-md-4 offset-md-1 col-xl-2 offset-xl-1 rounded my-3 text-decoration-none text-dark zoom" href="#portfolio">
                         <p class="fs-4 p-1">Développement de site web statique et d'application web complète.</p>
                     </a>
-                    <a class="MySQL col-6 offset-3 offset-md-2 offset-xl-1 col-md-4 col-xl-2 rounded my-3 text-decoration-none" href="#gestion_supermarche">
+                    <a class="compt MySQL col-6 offset-3 col-md-4 offset-md-2 col-xl-2 offset-xl-1 rounded my-3 text-decoration-none  zoom" href="#gestion_supermarche">
                         <p class="fs-4 p-1 text-info">Création et administration de Base de données relationnelle.</p>
                     </a>
-                    <a class="Git col-6 offset-3 offset-md-1 col-md-4 col-xl-2 rounded my-3 text-decoration-none text-dark" href="#travail_equipe">
+                    <a class="compt Git col-6 offset-3 col-md-4 offset-md-1 col-xl-2 offset-xl-1 rounded my-3 text-decoration-none text-dark  zoom" href="#travail_equipe">
                         <p class="fs-4 p-1 ">Travail d'équipe et collaboration sur des projets personnels, professionnels.</p>
                     </a>
-                    <a class="figma col-6 offset-3 offset-md-2 col-md-4 offset-xl-1 col-xl-2 rounded my-3 text-decoration-none" href="#maquette_appli_location">
+                    <a class="compt figma col-6 offset-3 offset-md-2 col-md-4 offset-xl-1 col-xl-2 rounded my-3 text-decoration-none  zoom" href="#maquette_appli_location">
                         <p class="fs-4 p-1 text-light">Création de maquettes prototypes pour application, site web.</p>
                     </a>
                 </div>
@@ -113,7 +116,7 @@
                 <div class="row align-items-center py-5">
                     <div class="col-12 col-lg-7">
                         <div class="container-fluid front-competence">
-                            <div class="row align-items-center my-3">
+                            <div class="language row align-items-center my-3">
                                 <div class="col-6 col-sm-5 col-xl-3 fs-4 text-info"><span class="mdi mdi-language-html5 mx-3"></span>HTML5</div>
                                 <div class="col">
                                     <div class="progress" data-bs-toggle="tooltip" title="75%">
@@ -121,7 +124,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row align-items-center my-3">
+                            <div class="language row align-items-center my-3">
                                 <div class="col-6 col-sm-5 col-xl-3 fs-4 text-info"><span class="mdi mdi-language-css3 mx-3"></span>CSS3</div>
                                 <div class="col">
                                     <div class="progress" data-bs-toggle="tooltip" title="75%">
@@ -129,7 +132,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row align-items-center my-3">
+                            <div class="language row align-items-center my-3">
                                 <div class="col-6 col-sm-5 col-xl-3 fs-4 text-info"><span class="mdi mdi-language-javascript mx-3"></span>JS</div>
                                 <div class="col">
                                     <div class="progress" data-bs-toggle="tooltip" title="50%">
@@ -145,11 +148,11 @@
                 </div>
                 <h5 class="col-12 col-md-6 offset-md-3 text-muted">Frameworks</h5>
                 <div class="row align-items-center mb-3">
-                    <img class="col-4 offset-1 offset-md-1 col-md-3 col-xl-2 rounded my-3" src="assets/IMG/React-icon.svg.png" data-bs-toggle="tooltip"
+                    <img class="framework front col-3 offset-md-1 col-md-2 rounded my-3" src="assets/IMG/React-icon.svg.png" data-bs-toggle="tooltip"
                     title="React est un framework javasript utilisé dans la conception d'application web statique, basé sur l'utilisatin des composants réutilisables">
-                    <img class="col-4 offset-1 offset-md-1 col-md-3 col-xl-2 rounded my-3" src="assets/IMG/Bootstrap_logo.svg.png" data-bs-toggle="tooltip"
+                    <img class="framework front col-3 offset-md-1 col-md-2 rounded my-3" src="assets/IMG/Bootstrap_logo.svg.png" data-bs-toggle="tooltip"
                     title="Bootstrap est un framework front-end utilisé pour la creéation de pages web responsives et interractives">
-                    <img class="col-4 offset-1 offset-md-1 col-md-3 col-xl-2 rounded my-3" src="assets/IMG/gsap.png" data-bs-toggle="tooltip"
+                    <img class="framework front col-3 offset-md-1 col-md-2 rounded my-3" src="assets/IMG/gsap.png" data-bs-toggle="tooltip"
                     title="GSAP est un framework javasript utilisé pour l'animation des pages web">
                 </div>
                 <div class="row align-items-center">
@@ -161,7 +164,7 @@
                     </div>
                     <div class="col-12 order-first col-lg-7 order-lg-last back-competence">
                         <div class="container-fluid">
-                            <div class="row align-items-center my-3">
+                            <div class="language row align-items-center my-3">
                                 <div class="col-6 col-sm-5 col-xl-3 fs-4 text-info"><span class="mdi mdi-language-python me-2"></span>PYTHON</div>
                                 <div class="col">
                                     <div class="progress" data-bs-toggle="tooltip" title="75%">
@@ -169,7 +172,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row align-items-center my-3">
+                            <div class="language row align-items-center my-3">
                                 <div class="col-6 col-sm-5 col-xl-3 fs-4 text-info"><span class="mdi mdi-database-outline mx-2"></span>SQL</div>
                                 <div class="col">
                                     <div class="progress" data-bs-toggle="tooltip" title="100%">
@@ -177,7 +180,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row align-items-center my-3">
+                            <div class="language row align-items-center my-3">
                                 <div class="col-6 col-sm-5 col-xl-3 fs-4 text-info"><span class="mdi mdi-language-c ms-2"></span> / <span class="mdi mdi-language-cpp"></span></div>
                                 <div class="col">
                                     <div class="progress" data-bs-toggle="tooltip" title="50%">
@@ -185,7 +188,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row align-items-center my-3">
+                            <div class="language row align-items-center my-3">
                                 <div class="col-6 col-sm-5 col-xl-3 fs-4 text-info"><span class="mdi mdi-language-java mx-3"></span>Java</div>
                                 <div class="col">
                                     <div class="progress" data-bs-toggle="tooltip" title="75%">
@@ -197,37 +200,37 @@
                     </div>
                 </div>
                 <h5 class="col-12 col-md-6 offset-md-3 text-muted">Frameworks</h5>
-                <div class="row align-items-center mb-3">
+                <div class="framework back row align-items-center mb-3">
                     <img class="col-4 offset-1 offset-md-1 col-md-3 col-xl-2 rounded my-3" src="assets/IMG/django.png" data-bs-toggle="tooltip"
                     title="Django est un framework python utilisé pour la création d'application web complète">
-                    <img class="col-4 offset-1 offset-md-1 col-md-3 col-xl-2 rounded my-3" src="assets/IMG/qt.png" data-bs-toggle="tooltip"
+                    <img class="framework back col-4 offset-1 offset-md-1 col-md-3 col-xl-2 rounded my-3" src="assets/IMG/qt.png" data-bs-toggle="tooltip"
                     title="Qt est un framework qui s'utilise plus avec le language c++ pour la création d'application GUI pour tous types de système d'exploitation">
                 </div>
             </div>
         </section>
-        <section id="portfolio" class="py-5">
+        <section id="portfolio" class="py-5 container-fluid">
             <div class="container">
-                <h1 class="text-primary">Mon portfolio</h1>
+                <h1 class="text-primary title_portfolio col-9 col-md-6">Mon portfolio</h1>
                 <div class="row align-items-center">
                     <h5 class="col-12 col-md-6 offset-md-3 text-muted">Projets perso et pro</h5>
                 </div>
                 <div class="d-flex flex-wrap">
                     <div class="card m-3" id="pmb">
                         <div class="row align-items-center">
-                            <img src="PMB_Site/pmb.png" alt="Page d'acceuil du site" class="col-12 col-lg-4">
+                            <img src="PMB_Site/pmb.png" alt="Page d'acceuil du site" class="img col-12 col-lg-4">
                             <div class="col-10 col-lg-7 offset-1 p-4">
                                 <h5 class="text-muted">PMB</h5>
                                 <p class="m-3">Il s'agit d'un site web de présentation d'une école militaire, a travers les six pages de ce site, nous avons
                                     décrit le curus scolaire, le mode de vie des élèves, les évènements scolaires, les modalités de paiement et plein d'autres.
                                 </p>
-                                <a class="btn btn-info text-light my-3 my-xl-0" href="PMB_Site/index.html">En savoir plus</a>
+                                <a class="btn btn-info btn-pmb text-light my-3 my-xl-0" href="PMB_Site/index.html">En savoir plus</a>
                             </div>
                         </div>
                     </div>
                     <div class="card m-3" id="gestion_supermarche">
                         <div class="row align-items-center">
                             <div class="col-12 col-lg-4 order-lg-last">
-                                <img src="gestion supermarche/gestion_supermarche.png" alt="Structure de la base de données" class="img-fluid">
+                                <img src="gestion supermarche/gestion_supermarche.png" alt="Structure de la base de données" class="img img-fluid">
                             </div>
                             <div class="col-10 col-lg-7 p-4 offset-1">
                                 <h5 class="text-muted">Supermarché</h5>
@@ -235,26 +238,26 @@
                                     exécution de Requêtes, sécurité des données, etc... <br>
                                     Fichier <a href="gestion supermarche/gestion_supermarche_test.sql" class="text-decoration-none text-info">sql</a> de la base de données.
                                 </p>
-                                <a class="btn btn-info text-light my-3 my-xl-0" href="gestion supermarche/gestion_supermarche.pdf">En savoir plus</a>
+                                <a class="btn btn-info btn-supermarche text-light my-3 my-xl-0" href="gestion supermarche/gestion_supermarche.pdf">En savoir plus</a>
                             </div>
                         </div>
                     </div>
                     <div class="card m-3" id="maquette_appli_location">
                         <div class="row align-items-center">
-                            <img src="assets/IMG/maquette_app.png" alt="Vue d'ensemble de toutes les pages de la maquette" class="col-12 col-lg-4">
+                            <img src="assets/IMG/maquette_app.png" alt="Vue d'ensemble de toutes les pages de la maquette" class="img col-12 col-lg-4">
                             <div class="col-10 col-lg-7 offset-1 p-4">
                                 <h5 class="text-muted">Maquette d'application mobile</h5>
                                 <p class="m-3">Création d'une maquette pour chaque page d'une application mobile de location de véhicule, avec toutes les fonctionnalités
                                     qui vont avec, authentification, réservation, informations sur un véhicule, etc...
                                 </p>
-                                <a class="btn btn-info text-light my-3 my-xl-0" href="Maquette appli de location vehicule/app.pdf">En savoir plus</a>
+                                <a class="btn btn-info btn-maquette text-light my-3 my-xl-0" href="Maquette appli de location vehicule/app.pdf">En savoir plus</a>
                             </div>
                         </div>
                     </div>
                     <div class="card m-3" id="travail_equipe">
                         <div class="row align-items-center">
                             <div class="col-12 col-lg-4 order-lg-last">
-                                <img src="assets/IMG/equipe.png" alt="Profil github" class="img-fluid">
+                                <img src="assets/IMG/equipe.png" alt="Profil github" class="img img-fluid">
                             </div>
                             <div class="col-10 col-lg-7 p-4 offset-1">
                                 <h5 class="text-muted">Travail d'équipe</h5>
@@ -268,15 +271,15 @@
                 </div>
             </div>
         </section>
-        <section class="py-5 bg-light" id="contact">
+        <section class="py-5 bg-light container-fluid" id="contact">
             <div class="container">
-                <h1 class="text-primary">Un nouveau projet ?</h1>
+                <h1 class="text-primary title_new col-9 col-md-6">Un nouveau projet ?</h1>
                 <div class="row align-items-center">
-                    <div class="col-12 col-md-5">
+                    <div class="contact col-12 col-md-5">
                         <p class=" text-muted">Je serai ravi de mettre mon savoir à votre disposition pour la réalisation de votre projet</p>
                         <img src="assets/IMG/projet.jpg" width="100%" alt="" class="projet-a-creer">
                     </div>
-                    <div class="col-12 col-md-5 offset-md-1 mt-4 mt-md-0">
+                    <div class="form col-12 col-md-5 offset-md-1 mt-4 mt-md-0">
                         <form action="">
                             <div class="row">
                                 <label class="col-5 m-2 text-muted">Nom<br>
@@ -357,6 +360,9 @@
                 </div>
             </div>
         </footer>
+        <script src="assets/JS/bootstrap.bundle.min.js"></script>
+        <script src="node_modules/gsap/dist/gsap.min.js"></script>
+        <script src="node_modules/gsap/dist/ScrollTrigger.min.js"></script>
         <script>
             var header = document.querySelector('nav');
             var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
@@ -396,5 +402,6 @@
             return new bootstrap.Tooltip(tooltipTriggerEl)
             })
         </script>
+        <script src="assets/JS/index.js"></script>
     </body>
 </html>

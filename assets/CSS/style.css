@@ -25,6 +25,12 @@
 .fond-noir{
   background-color: black;
 }
+.zoom{
+  transition: transform 0.3s;
+}
+.zoom:hover{
+  transform: scale(0.98);
+}
 
 /* switch settings 👇 */
 
