@@ -55,7 +55,6 @@ gsap.set(".contact",{opacity: 0,y: -100})
 gsap.set(".form",{opacity: 0,y: 100})
 let timeline = gsap.timeline() ; let front = gsap.timeline() ; let back = gsap.timeline()
 
-Scroll(".btn-expertise",100)
 
 gsap.utils.toArray(".front").forEach((framework) => {
     front.to(framework,{opacity: 1, duration: 1, rotate: 360, x: 10})
