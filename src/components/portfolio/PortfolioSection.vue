@@ -1,6 +1,6 @@
 <template>
   <section id="portfolio" class="py-16">
-    <div class="container px-6">
+    <div class="px-6">
 
       <h2 class="projects text-4xl font-bold font-poppins text-accent text-center mb-12">
         Mes Projets
@@ -20,9 +20,11 @@
         </button>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
-        <ProjectCard v-for="project in filteredProjects" :key="project.id" :project="project" :animate="animate"
-          @openModal="openModal" />
+      <div class="flex flex-wrap justify-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
+          <ProjectCard v-for="project in filteredProjects" :key="project.id" :project="project" :animate="animate"
+            @openModal="openModal" />
+        </div>
       </div>
     </div>
 
