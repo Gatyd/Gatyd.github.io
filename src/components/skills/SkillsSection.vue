@@ -133,14 +133,14 @@ onMounted(() => {
         <h2 class="skills text-4xl text-center font-poppins pb-16 font-bold text-accent relative" ref="header">
             Compétences techniques
         </h2>
-        <div class="flex flex-wrap justify-center gap-14 md:gap-x-20 lg:gap-x-32 mt-8">
+        <div class="flex flex-wrap justify-center gap-12 md:gap-x-20 lg:gap-x-32 mt-8">
             <TechCard v-for="(tech, index) in techs" :key="tech.name" :name="tech.name" :icon="tech.icon" class="skill"
                 :description="tech.description" :class="index % 2 !== 0 ? 'xl:mt-32' : 'xl:mb-32'" />
         </div>
         <h2 class="tools text-4xl text-center font-poppins py-16 font-bold text-accent relative" ref="header">
             Outils de développement
         </h2>
-        <div class="flex flex-wrap justify-center gap-14 md:gap-x-20 lg:gap-x-32 mt-8">
+        <div class="flex flex-wrap justify-center gap-10 md:gap-x-20 lg:gap-x-32 mt-8">
             <TechCard v-for="(tool, index) in tools" :key="tool.name" :name="tool.name" :icon="tool.icon" class="tool"
             :description="tool.description" :class="index % 2 !== 0 ? 'xl:mt-32' : 'xl:mb-32'" />
         </div>
