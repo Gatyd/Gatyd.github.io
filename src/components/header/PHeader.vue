@@ -75,8 +75,8 @@ onUnmounted(() => {
 
 <template>
     <header class="header opacity-20 fixed top-0 left-0 w-full z-50 bg-primary dark:bg-white" >
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="logo flex text-3xl font-extrabold tracking-widest">
+        <div class="container mx-auto px-6 py-2.5 flex justify-between items-center">
+            <div class="logo flex text-2xl md:text-3xl font-extrabold tracking-widest">
                 <a href="#accueil" class="hover:text-accent text-white dark:text-gray-800 transition">T.<span
                         class="text-accent hover:text-black">A</span></a>
                 <ColorModeButton />
@@ -87,18 +87,18 @@ onUnmounted(() => {
             </nav>
 
             <div class="flex items-center space-x-4">
-                <a class="contact bg-accent text-white font-semibold py-2 px-6 rounded-full shadow-lg transition border border-accent hover:bg-transparent hover:text-accent"
+                <a class="contact bg-accent text-white font-semibold py-[3px] md:py-1.5 px-3 md:px-4.5 lg:py-2 lg:px-6 rounded-full shadow-lg transition border border-accent hover:bg-transparent hover:text-accent"
                     href="#contact">
                     Me Contacter
                 </a>
             </div>
 
             <button @click="toggleMenu" class="md:hidden text-primary-dark dark:text-primary-light">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white dark:text-gray-dark" fill="none" viewBox="0 0 24 24"
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8 text-white dark:text-gray-dark" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" v-if="!isMenuOpen">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
-                <component :is="CloseIcon" class="size-6 text-white dark:text-gray-dark" v-else></component>
+                <component :is="CloseIcon" class="size-5 md:size-6 text-white dark:text-gray-dark" v-else></component>
             </button>
         </div>
         <div v-if="isMenuOpen"

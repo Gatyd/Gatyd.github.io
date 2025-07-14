@@ -31,9 +31,13 @@ onMounted(() => {
     repeat: -1,
     yoyo: true
   });
-  tippy(techCard.value, {
-    content: props.description,
-    placement: 'top'
+  gsap.delayedCall(2, () => {
+    gsap.to(techCard.value, {
+      y: "+=6",
+      duration: 1,
+      repeat: -1,
+      yoyo: true
+    });
   });
 });
 </script>

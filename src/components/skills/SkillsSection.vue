@@ -99,9 +99,11 @@ onMounted(() => {
                 start: "top 80%",
                 end: "top 20%",
             },
-            opacity: 1, y: 0,
+            opacity: 1, 
+            y: 0,
             stagger: 0.3,
             duration: 2,
+            ease: "power2.out"
         }
     )
     gsap.fromTo(
@@ -116,9 +118,11 @@ onMounted(() => {
                 start: "top 80%",
                 end: "top 20%"
             },
-            opacity: 1, y: 0,
+            opacity: 1, 
+            y: 0,
             stagger: 0.3,
-            duration: 2
+            duration: 2,
+            ease: "power2.out"
         }
     )
 })

@@ -12,7 +12,7 @@ const toggleDarkMode = () => {
 
 <template>
     <button @click="toggleDarkMode"
-        class="w-10 h-10 ms-2 flex items-center justify-center rounded-full transition duration-300">
+        class="ms-2 flex items-center justify-center rounded-full transition duration-300">
         <span v-if="!isDarkMode" class="material-icons text-white">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-6">

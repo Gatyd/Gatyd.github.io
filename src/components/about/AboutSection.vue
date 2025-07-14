@@ -1,9 +1,10 @@
 <template>
-  <section
-    class="flex lg:flex-col xl:flex-row items-center justify-center mt-5 xl:mt-16 py-16" id="about">
+  <section class="flex lg:flex-col xl:flex-row items-center justify-center mt-[52px] md:mt-14 lg:mt-16 py-4 md:py-8 xl:py-16 pb-20"
+    id="about">
     <div class="container mx-auto grid grid-cols-1 lg:grid-cols-5 xl:grid-cols-3 gap-8 items-center">
-      
-      <div class="flex flex-row lg:flex-col lg:col-span-2 xl:col-span-1 justify-between md:justify-start items-center ps-2 pe-6 lg:ps-6 lg:pe-6 ">
+
+      <div
+        class="flex flex-row lg:flex-col lg:col-span-2 xl:col-span-1 justify-between md:justify-start items-center ps-2 pe-6 lg:ps-6 lg:pe-6 ">
         <div
           class="w-40 h-40 lg:w-96 lg:h-96 lg:mx-auto rounded-full overflow-hidden shadow-lg transform hover:scale-105 hover:rotate-3 transition-transform duration-500 ease-out"
           @mouseover="animateImage" @mouseleave="resetImage">
@@ -12,7 +13,8 @@
         <div class="mt-2 md:ms-5 lg:ms-0">
           <span class="text-xl font-bold lg:hidden">Thierry Aplogan</span>
           <div class="md:flex md:flex-row lg:hidden xl:block xl:flex-col md:gap-10 lg:gap-0">
-            <Social href="https://wa.me/+22943745963" target="blank" :icon="WhatsapIcon" label="(+229) 01 43 74 59 63" />
+            <Social href="https://wa.me/+22943745963" target="blank" :icon="WhatsapIcon"
+              label="(+229) 01 43 74 59 63" />
             <Social href="mailto:devgatyd@gmail.com" :icon="MailIcon" label="devgatyd@gmail.com" />
           </div>
         </div>
@@ -35,9 +37,9 @@
           J’aime transformer des idées complexes en solutions intuitives.
         </p>
         <div class="hidden lg:flex lg:gap-10 xl:hidden ">
-            <Social href="https://wa.me/+22943745963" target="blank" :icon="WhatsapIcon" label="(+229) 01 43 74 59 63" />
-            <Social href="mailto:devgatyd@gmail.com" :icon="MailIcon" label="devgatyd@gmail.com" />
-          </div>
+          <Social href="https://wa.me/+22943745963" target="blank" :icon="WhatsapIcon" label="(+229) 01 43 74 59 63" />
+          <Social href="mailto:devgatyd@gmail.com" :icon="MailIcon" label="devgatyd@gmail.com" />
+        </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:hidden xl:grid">
           <ServiceCard v-for="(service, index) in services" :key="index" :icon="service.icon" :title="service.title" />
         </div>
@@ -81,7 +83,7 @@ const services = [
 ];
 
 onMounted(() => {
-  
+
   gsap.fromTo(
     profileImage.value,
     { scale: 0, opacity: 0 },
