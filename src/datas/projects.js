@@ -10,6 +10,15 @@ export const projects = [
     },
     {
       id: 2,
+      name: 'NEPHROCARE',
+      description: 'Application web de gestion et suivi des patients atteints de maladie rénale chronique.',
+      type: "Web",
+      image: '/nephrocare/index.png',
+      liveUrl: 'https://nephro-care.vercel.app/',
+      videoDemo: null,
+    },
+    {
+      id: 3,
       name: 'Maquette Vehix',
       description: 'Maquette d\'une application mobile de location de véhicules.',
       type: "Ui / Ux",
@@ -18,13 +27,13 @@ export const projects = [
       videoDemo: null,
     },
     {
-      id: 3,
+      id: 4,
       name: 'CollabSphere',
       description: 'Application web de gestion de tâche collaboratives.',
       type: "Web",
       image: 'collabsphere/index.png',
       liveUrl: null,
-      videoDemo: 'collabsphere/demo_collabsphere.mp4',
+      videoDemo: 'collabsphere/demo.mp4',
       chapters: [
         { time: 0, title: "Présentation" },
         { time: 5.5, title: "Connexion" },
@@ -38,13 +47,13 @@ export const projects = [
       ]
     },
     {
-      id: 4,
+      id: 5,
       name: 'Vehix',
       description: 'Application mobile de location de véhicules.',
       type: "Mobile",
       image: '/vehix/app/logo.png',
       liveUrl: null,
-      videoDemo: 'vehix/app/demo_vehix.mp4',
+      videoDemo: 'vehix/app/demo.mp4',
       chapters: [
         { time: 0, title: "Connexion" },
         { time: 5, title: "Tableau de bord" },
@@ -55,6 +64,26 @@ export const projects = [
         { time: 76.9, title: "Location de véhicule" },
         { time: 113, title: "Gestion des locations" },
         { time: 136, title: "Paramètres" },
+      ]
+    },
+    {
+      id: 6,
+      name: 'HealthTrack',
+      description: 'l\'identification numérique pour des soins de santé accessibles et personnalisés.',
+      type: "Mobile",
+      image: '/healthtrack/logo.png',
+      liveUrl: null,
+      videoDemo: 'healthtrack/demo.mp4',
+      chapters: [
+        { time: 0, title: "Connexion avec e-signet" },
+        { time: 9, title: "Inscription" },
+        { time: 28, title: "Tableau de bord" },
+        { time: 48, title: "Localisation des pharmacies" },
+        { time: 65, title: "Partage via l'application" },
+        { time: 96, title: "Interface médecin" },
+        { time: 111, title: "Ajout de fichier" },
+        { time: 137, title: "Scan code QR" },
+        { time: 170, title: "Notifications" },
       ]
     }
   ]

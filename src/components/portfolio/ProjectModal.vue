@@ -11,7 +11,7 @@
 
         <div class="flex flex-col xl:flex-row overflow-y-auto">
           <div class="flex-1">
-            <video ref="videoPlayer" controls class="w-full rounded-lg">
+            <video ref="videoPlayer" controls class="w-full h-full rounded-lg">
               <source :src="project.videoDemo" type="video/mp4" />
               Votre navigateur ne supporte pas les vidéos.
             </video>
