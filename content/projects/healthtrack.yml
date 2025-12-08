@@ -1,0 +1,38 @@
+title: HealthTrack
+description: Application mobile d'identification numérique pour des soins de santé accessibles et personnalisés avec intégration e-Signet.
+date: 2024-03-01
+cover: /healthtrack/logo.png
+type: Mobile
+technologies:
+  - Flutter
+  - Firebase
+  - e-Signet Integration
+  - QR Code Scanner
+videoDemo: /healthtrack/demo.mp4
+chapters:
+  - time: 0
+    title: Connexion avec e-signet
+  - time: 9
+    title: Inscription
+  - time: 28
+    title: Tableau de bord
+  - time: 48
+    title: Localisation des pharmacies
+  - time: 65
+    title: Partage via l'application
+  - time: 96
+    title: Interface médecin
+  - time: 111
+    title: Ajout de fichier
+  - time: 137
+    title: Scan code QR
+  - time: 170
+    title: Notifications
+features:
+  - Authentification e-Signet sécurisée
+  - Dossier médical numérique
+  - Géolocalisation des pharmacies
+  - Interface patient et médecin
+  - Scan de QR code pour identification
+  - Partage sécurisé de documents médicaux
+  - Système de notifications

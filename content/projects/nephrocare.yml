@@ -1,0 +1,19 @@
+title: NephroCare
+description: Application web de gestion et suivi des patients atteints de maladie rénale chronique.
+date: 2023-10-15
+cover: /nephrocare/index.png
+type: Web
+technologies:
+  - Nuxt 3
+  - Tailwind CSS
+  - Django REST Framework
+  - PostgreSQL
+links:
+  - label: Démo en ligne
+    to: https://nephro-care.vercel.app/
+    icon: i-lucide-external-link
+features:
+  - Dossier médical électronique
+  - Suivi des consultations et traitements
+  - Gestion des rendez-vous
+  - Rapports médicaux personnalisés

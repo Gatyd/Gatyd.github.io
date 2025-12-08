@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "speaking": "Speaking",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Hey, I'm Thierry Aplogan",
+    "subtitle": "Full-Stack Developer",
+    "description": "I build digital experiences that drive growth and transform ideas into scalable solutions.",
+    "available": "Available for projects",
+    "cta": "Get in touch"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Full-stack developer passionate about creating modern, performant applications. I combine technical expertise with creative problem-solving to deliver solutions that exceed expectations."
+  },
+  "experience": {
+    "title": "Work Experience",
+    "web": {
+      "title": "Web Development",
+      "description": "Vue.js, Nuxt, Tailwind CSS"
+    },
+    "mobile": {
+      "title": "Mobile Development",
+      "description": "Flutter, iOS, Android"
+    },
+    "backend": {
+      "title": "Backend",
+      "description": "Django, Python, REST APIs"
+    },
+    "ai": {
+      "title": "AI & Productivity",
+      "description": "GitHub Copilot, ChatGPT, Gemini"
+    }
+  },
+  "testimonials": {
+    "title": "Client Testimonials"
+  },
+  "techStack": {
+    "title": "Tech Stack",
+    "description": "The technologies I use daily to build high-performance solutions."
+  },
+  "cta": {
+    "title": "Have a project in mind?",
+    "description": "Let's discuss your project and see how I can help bring it to life.",
+    "button": "Contact me"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Answers to common questions about my process and services."
+  },
+  "footer": {
+    "built": "Built with Nuxt & Nuxt UI"
+  }
+}

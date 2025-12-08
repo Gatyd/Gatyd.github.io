@@ -1,12 +1,15 @@
 seo:
-  title: "Emma Thompson - UX/UI Designer"
-  description: "Welcome to my portfolio! I'm Emma Thompson, a UX/UI designer and front-end developer based in Boston. I specialize in creating user-centered digital experiences that are both beautiful and functional."
-title: "Hey, I'm Emma Thompson UX/UI Designer"
-description: "I craft intuitive digital experiences where design meets functionality. Based in Boston, bringing ideas to life through code and creativity."
+  title: "Thierry Aplogan - Full-Stack Developer"
+  description: "Portfolio de Thierry Aplogan, développeur full-stack passionné par la création d'applications modernes et performantes. Expertise en Vue.js, Nuxt, Flutter, Django et IA."
+title: "Salut, je suis Thierry Aplogan"
+description: "Je crée des expériences digitales qui favorisent la croissance et transforment les idées en solutions évolutives."
 hero:
   links:
-    - label: "Use this template"
-      to: https://github.com/nuxt-ui-templates/portfolio
+    - label: "Me contacter"
+      to: "mailto:devgatyd@gmail.com"
+      color: "primary"
+    - label: "Voir mes projets"
+      to: "/projects"
       color: "neutral"
   images:
     - src: /hero/random-1.avif
@@ -28,92 +31,79 @@ hero:
     - src: /hero/random-9.avif
       alt: Random Image 9
 about:
-  title: "About Me"
+  title: "À propos"
   description: |
-    As a UX/UI designer and front-end developer with 6 years of experience, I leverage my Boston University Interactive Design degree to craft user-centered digital experiences.
-    My approach blends creative strategy with technical expertise, transforming concepts into functional, purposeful digital products that seamlessly integrate design and technology.
+    Développeur full-stack passionné par la création d'applications modernes et performantes. 
+    Je combine expertise technique et créativité pour livrer des solutions qui dépassent les attentes.
+    
+    Spécialisé dans les technologies web modernes (Vue.js, Nuxt), le développement mobile (Flutter) et le backend robuste (Django, Python).
 experience:
-  title: Work Experience
+  title: Domaines d'expertise
   items:
-    - position: "Brand Designer at"
-      date: "2023 - Present"
+    - position: "Développement"
+      date: "Web & Mobile"
       company:
-        name: Nuxt
-        logo: "i-simple-icons-nuxtdotjs"
-        url: "https://nuxt.com"
-        color: "#00DC82"
-    - position: "Assets Designer at"
-      date: "2022 - 2023"
+        name: Frontend
+        logo: "i-lucide-code"
+        color: "#06B6D4"
+      description: "Vue.js, Nuxt, Tailwind CSS, Flutter"
+    - position: "Développement"
+      date: "Backend & APIs"
       company:
-        name: Raycast
-        logo: "i-simple-icons-raycast"
-        url: "https://raycast.com"
-        color: "#FF6363"
-    - position: "Senior UX/UI Designer at"
-      date: "2020 - 2021"
+        name: Backend
+        logo: "i-lucide-server"
+        color: "#06B6D4"
+      description: "Django, Python, APIs REST"
+    - position: "Outils"
+      date: "IA & Productivité"
       company:
-        name: Linear
-        logo: "i-simple-icons-linear"
-        url: "https://linear.app"
-        color: "#5E6AD2"
+        name: AI Tools
+        logo: "i-lucide-sparkles"
+        color: "#06B6D4"
+      description: "GitHub Copilot, ChatGPT, Gemini"
 testimonials:
-  - quote: "Emma's approach to UX design completely transformed our product. She has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics."
+  - quote: "Thierry a transformé notre vision en une application web robuste et moderne. Son expertise technique en Vue.js et Django nous a permis de lancer notre plateforme en temps record. Il comprend vraiment les besoins métier et propose des solutions pragmatiques."
     author:
-      name: 'Sarah Chen'
-      description: 'Product Director at Bloom Finance'
-      avatar:
-        src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Working with Emma was the best decision we made for our startup. She didn't just deliver designs—she challenged our assumptions, conducted thorough user research, and created an experience that truly resonated with our audience. Her technical knowledge of front-end development meant the handoff to our engineering team was seamless."
-    author:
-      name: 'Michael Rodriguez'
-      description: 'Co-founder of Wavelength Music'
+      name: 'Jean-Marc Dubois'
+      description: 'CEO - TransImpex Sarl'
       avatar:
         src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
         srcset: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Emma stands out in her ability to translate complex sustainability data into intuitive interfaces. Her work on EcoTrack wasn't just visually stunning—it fundamentally changed how our users interact with environmental information. She approaches each problem with both creativity and analytical rigor, which is exactly what we needed."
+  - quote: "L'application de gestion médicale développée par Thierry a considérablement amélioré notre efficacité. Interface intuitive, performances excellentes, et un suivi patient qui répond parfaitement à nos besoins. Un professionnel fiable et à l'écoute."
     author:
-      name: 'Dr. Aisha Johnson'
-      description: 'Chief Innovation Officer at GreenTech Solutions'
+      name: 'Dr. Sarah Okonkwo'
+      description: 'Néphrologue - NephroCare Clinic'
       avatar:
         src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
         srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-blog:
-  title: "Latest Articles"
-  description: "Some of my recent thoughts"
+  - quote: "Travailler avec Thierry a été un vrai plaisir. Il a su traduire nos maquettes en une application Flutter performante et élégante. Son utilisation des outils IA comme GitHub Copilot lui permet une productivité impressionnante sans sacrifier la qualité."
+    author:
+      name: 'Alexandre Martin'
+      description: 'Product Manager - Vehix'
+      avatar:
+        src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
+        srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
 faq:
-  title: Frequently Asked Questions
-  description: Answers to common questions about my process and services.
+  title: Questions Fréquentes
+  description: Réponses aux questions courantes sur mes services et mon processus.
   categories:
-    - title: Services & Process
+    - title: Services & Processus
       questions:
-        - label: What services do you offer?
+        - label: Quels types de projets réalisez-vous ?
           content: |
-            I specialize in UX/UI design and front-end development. This includes user research, wireframing, interactive prototyping, creating intuitive user interfaces, building responsive websites and web applications (especially with Vue.js/Nuxt.js), and developing design systems. My goal is to create seamless digital experiences from concept to deployment.
-        - label: What is your design process like?
+            Je me spécialise dans le développement d'applications web modernes (Vue.js, Nuxt), d'applications mobiles multiplateformes (Flutter), et de backends robustes (Django, Python). Je peux prendre en charge un projet de A à Z ou intervenir sur des besoins spécifiques.
+        - label: Comment se déroule votre processus de développement ?
           content: |
-            My process is collaborative and iterative, typically involving stages like Discovery & Research, Ideation & Prototyping, User Testing, Visual Design, and close collaboration with development teams during implementation. I tailor the process based on project needs, always focusing on user-centered solutions.
-        - label: Do you work with startups?
+            Mon processus est collaboratif et itératif : analyse des besoins, conception technique, développement avec revues régulières, tests approfondis, puis déploiement. J'adapte ma méthode selon la taille et les contraintes du projet, en gardant toujours une communication transparente.
+        - label: Travaillez-vous avec des startups ?
           content: |
-            Absolutely! I enjoy working with startups to help shape their product vision and create user-friendly interfaces from the ground up. I can adapt my process to fit the fast-paced startup environment.
-    - title: Pricing & Timelines
-      questions:
-        - label: How much does a project typically cost?
+            Absolument ! J'apprécie particulièrement aider les startups à concrétiser leur vision produit. Je sais m'adapter au rythme rapide et aux pivots fréquents, tout en gardant un code maintenable pour la croissance future.
+        - label: Utilisez-vous l'IA dans votre travail ?
           content: |
-            Project costs vary based on scope, complexity, features, and timeline. For comprehensive UX/UI design and front-end development projects, my engagements typically start around $5,000, with average projects ranging between $8,000 and $25,000. For consulting or specific design tasks, my day rate is $700.
-        - label: What are your payment terms?
+            Oui, j'intègre des outils d'IA comme GitHub Copilot, ChatGPT et Gemini pour augmenter ma productivité de 30-40%. Cela me permet de me concentrer sur l'architecture et la logique métier tout en accélérant les tâches répétitives, sans jamais compromettre la qualité du code.
+        - label: Proposez-vous de la maintenance après livraison ?
           content: |
-            I generally require a 40% deposit to schedule the project and begin work, with the remaining 60% due upon successful project completion and delivery. I accept payments via bank transfer and Stripe.
-        - label: How long does a typical project take?
-          content: |
-            Timelines depend heavily on the project's scope and complexity. Smaller projects might take 3-4 weeks, while larger, more involved projects can range from 2 to 4 months. I always provide a detailed timeline estimate after the initial discovery phase.
-        - label: Do you offer retainers or ongoing support?
-          content: |
-            Yes, for clients needing ongoing design support, feature development, or maintenance, I offer monthly retainer options tailored to specific needs. Let's discuss if this is something you're interested in.
-    - title: About Me
-      questions:
-        - label: What do you enjoy most about your work?
-          content: |
+            Oui, je propose des contrats de maintenance et de support continu adaptés à vos besoins. Que ce soit pour des corrections de bugs, des évolutions fonctionnelles ou de l'optimisation, je reste disponible pour assurer la pérennité de votre solution.
             I love the challenge of solving complex problems through design and technology. It's incredibly rewarding to see people interact with something I've created and find it genuinely useful and easy to navigate. Bridging the gap between user needs and technical possibilities is what truly excites me.
         - label: What are your hobbies outside of work?
           content: |

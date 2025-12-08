@@ -1,0 +1,18 @@
+title: Vehix - Maquette UI/UX
+description: Maquette interactive d'une application mobile de location de véhicules, conçue pour offrir une expérience utilisateur fluide.
+date: 2024-02-10
+cover: /vehix/maquette/maquette_vehix.png
+type: UI/UX
+technologies:
+  - Figma
+  - Canva
+  - Design System
+links:
+  - label: Voir la maquette
+    to: https://www.canva.com/design/DAGdWYqHq8Y/SktKoz7uF00iqDawt38cgA/view?mode=prototype
+    icon: i-lucide-figma
+features:
+  - Parcours utilisateur optimisé
+  - Design moderne et épuré
+  - Prototypage interactif
+  - Composants réutilisables

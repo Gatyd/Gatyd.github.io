@@ -1,0 +1,36 @@
+title: CollabSphere
+description: Application web collaborative de gestion de projets et tâches en équipe avec notifications en temps réel.
+date: 2023-06-20
+cover: /collabsphere/index.png
+type: Web
+technologies:
+  - Vue.js 3
+  - Tailwind CSS
+  - Django
+  - WebSocket
+videoDemo: /collabsphere/demo.mp4
+chapters:
+  - time: 0
+    title: Présentation
+  - time: 5.5
+    title: Connexion
+  - time: 10
+    title: Tableau de bord
+  - time: 17.9
+    title: Gestion des projets
+  - time: 46.5
+    title: Tri et filtrage des projets
+  - time: 62
+    title: Gestion des tâches
+  - time: 95.5
+    title: Notifications
+  - time: 110
+    title: Collaborations
+  - time: 118.4
+    title: Gestion des utilisateurs
+features:
+  - Gestion de projets multi-équipes
+  - Système de tâches avec assignation
+  - Notifications temps réel
+  - Collaboration et commentaires
+  - Filtrage et recherche avancés
