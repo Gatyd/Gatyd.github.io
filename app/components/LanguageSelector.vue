@@ -1,36 +1,25 @@
 <script setup lang="ts">
 const { locale, locales, setLocale } = useI18n()
 
-const availableLocales = computed(() => {
-  return locales.value.filter(l => l.code !== locale.value)
+const languageOptions = computed(() => {
+  return locales.value.map(l => ({
+    value: l.code,
+    label: l.code.toUpperCase()
+  }))
 })
 
-const currentLocale = computed(() => {
-  return locales.value.find(l => l.code === locale.value)
+const selectedLocale = computed({
+  get: () => locale.value,
+  set: (value) => setLocale(value as 'fr' | 'en')
 })
-
-const switchLocale = (code: string) => {
-  setLocale(code)
-}
 </script>
 
 <template>
-  <UDropdownMenu>
-    <UButton
-      variant="ghost"
-      color="neutral"
-      :label="currentLocale?.code.toUpperCase()"
-      trailing-icon="i-lucide-chevron-down"
-      size="xs"
-    />
-
-    <template #content>
-      <UDropdownMenuItem
-        v-for="loc in availableLocales"
-        :key="loc.code"
-        :label="loc.name"
-        @click="switchLocale(loc.code)"
-      />
-    </template>
-  </UDropdownMenu>
+  <USelect
+    v-model="selectedLocale"
+    :items="languageOptions"
+    size="xs"
+    variant="ghost"
+    color="neutral"
+  />
 </template>

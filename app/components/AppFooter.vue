@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { footer } = useAppConfig()
+const { t } = useI18n()
 </script>
 
 <template>
@@ -8,7 +9,7 @@ const { footer } = useAppConfig()
     :ui="{ left: 'text-muted text-xs' }"
   >
     <template #left>
-      {{ footer.credits }}
+      {{ t('footer.credits') }}
     </template>
 
     <template #right>

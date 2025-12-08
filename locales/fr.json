@@ -53,6 +53,6 @@
     "description": "Réponses aux questions courantes sur mes services et mon processus."
   },
   "footer": {
-    "built": "Construit avec Nuxt & Nuxt UI"
+    "credits": "© 2025 Thierry Aplogan. Développé avec Nuxt & Nuxt UI."
   }
 }
