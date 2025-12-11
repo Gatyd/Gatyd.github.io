@@ -41,7 +41,9 @@
   },
   "techStack": {
     "title": "Tech Stack",
-    "description": "The technologies I use daily to build high-performance solutions."
+    "description": "Technologies I use daily to build performant solutions.",
+    "languages": "Languages",
+    "frameworksLibs": "Frameworks & Libraries"
   },
   "cta": {
     "title": "Have a project in mind?",

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
-const { email } = useAppConfig()
+const { global } = useAppConfig()
 </script>
 
 <template>
@@ -18,7 +18,7 @@ const { email } = useAppConfig()
           {{ t('cta.description') }}
         </p>
         <UButton
-          :to="`mailto:${email}`"
+          :to="`mailto:${global.email}`"
           size="xl"
           color="primary"
           :label="t('cta.button')"

@@ -15,7 +15,7 @@ defineProps<{
     <UCarousel
       v-slot="{ item }"
       :items="page.testimonials"
-      :autoplay="{ delay: 4000 }"
+      :autoplay="{ delay: 5000 }"
       loop
       dots
       :ui="{

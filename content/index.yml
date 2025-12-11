@@ -12,77 +12,68 @@ hero:
       to: "/projects"
       color: "neutral"
   images:
-    - src: /hero/random-1.avif
-      alt: Random Image 1
-    - src: /hero/random-2.avif
-      alt: Random Image 2
-    - src: /hero/random-3.avif
-      alt: Random Image 3
-    - src: /hero/random-4.avif
-      alt: Random Image 4
-    - src: /hero/random-5.avif
-      alt: Random Image 5
-    - src: /hero/random-6.avif
-      alt: Random Image 6
-    - src: /hero/random-7.avif
-      alt: Random Image 7
-    - src: /hero/random-8.avif
-      alt: Random Image 8
-    - src: /hero/random-9.avif
-      alt: Random Image 9
+    - src: /hero/europgreensolar.png
+      alt: Europ'Green Solar
+    - src: /hero/nephrocare.png
+      alt: NephroCare
+    - src: /hero/healthtrack.png
+      alt: HealthTrack
+    - src: /hero/collabsphere.png
+      alt: CollabSphere
+    - src: /hero/vehix.png
+      alt: Vehix
+    - src: /hero/transimpex.png
+      alt: Transimpex
 about:
   title: "À propos"
   description: |
-    Développeur full-stack passionné par la création d'applications modernes et performantes. 
-    Je combine expertise technique et créativité pour livrer des solutions qui dépassent les attentes.
+    Dev full-stack avec 3+ ans d'expérience, je transforme des idées en applications concrètes et performantes.
     
-    Spécialisé dans les technologies web modernes (Vue.js, Nuxt), le développement mobile (Flutter) et le backend robuste (Django, Python).
+    Je me concentre sur la compréhension du problème réel, la simplification des processus, et la livraison de solutions qui facilitent vraiment le quotidien des utilisateurs. Pas de sur-ingénierie, juste du code propre et efficace qui répond au besoin.
+  link: "En savoir plus"
 experience:
-  title: Domaines d'expertise
+  title: Expérience de travail
   items:
-    - position: "Développement"
-      date: "Web & Mobile"
+    - position: "Dev Web & Mobile Freelance"
+      date: "2025 - Présent"
       company:
-        name: Frontend
-        logo: "i-lucide-code"
-        color: "#06B6D4"
-      description: "Vue.js, Nuxt, Tailwind CSS, Flutter"
-    - position: "Développement"
-      date: "Backend & APIs"
+        name: Upwork
+        image: "/companies/upwork.png"
+        url: "https://www.upwork.com/freelancers/thierrya?mp_source=share"
+        color: "#FFFFFF"
+    - position: "Dev web full-stack"
+      date: "2025"
       company:
-        name: Backend
-        logo: "i-lucide-server"
-        color: "#06B6D4"
-      description: "Django, Python, APIs REST"
-    - position: "Outils"
-      date: "IA & Productivité"
+        name: Polygone +
+        image: "/companies/polygone.png"
+        url: "#"
+        color: "#E0AD78"
+    - position: "Dev web backend"
+      date: "2024"
       company:
-        name: AI Tools
-        logo: "i-lucide-sparkles"
-        color: "#06B6D4"
-      description: "GitHub Copilot, ChatGPT, Gemini"
+        name: Transimpex BJ
+        image: "/companies/transimpex.png"
+        url: "#"
+        color: "#5088A1"
 testimonials:
   - quote: "Thierry a transformé notre vision en une application web robuste et moderne. Son expertise technique en Vue.js et Django nous a permis de lancer notre plateforme en temps record. Il comprend vraiment les besoins métier et propose des solutions pragmatiques."
     author:
-      name: 'Jean-Marc Dubois'
-      description: 'CEO - TransImpex Sarl'
+      name: 'Mr Marius'
+      description: 'CEO - Transimpex BJ'
       avatar:
-        src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+        alt: 'Mr Marius'
   - quote: "L'application de gestion médicale développée par Thierry a considérablement amélioré notre efficacité. Interface intuitive, performances excellentes, et un suivi patient qui répond parfaitement à nos besoins. Un professionnel fiable et à l'écoute."
     author:
       name: 'Dr. Sarah Okonkwo'
       description: 'Néphrologue - NephroCare Clinic'
       avatar:
-        src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+        alt: 'Dr. Sarah Okonkwo'
   - quote: "Travailler avec Thierry a été un vrai plaisir. Il a su traduire nos maquettes en une application Flutter performante et élégante. Son utilisation des outils IA comme GitHub Copilot lui permet une productivité impressionnante sans sacrifier la qualité."
     author:
       name: 'Alexandre Martin'
       description: 'Product Manager - Vehix'
       avatar:
-        src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+        alt: 'Alexandre Martin'
 faq:
   title: Questions Fréquentes
   description: Réponses aux questions courantes sur mes services et mon processus.
@@ -91,7 +82,7 @@ faq:
       questions:
         - label: Quels types de projets réalisez-vous ?
           content: |
-            Je me spécialise dans le développement d'applications web modernes (Vue.js, Nuxt), d'applications mobiles multiplateformes (Flutter), et de backends robustes (Django, Python). Je peux prendre en charge un projet de A à Z ou intervenir sur des besoins spécifiques.
+            Je me spécialise dans le développement d'applications web modernes (Vue.js, Nuxt, React, Next.js), d'applications mobiles multiplateformes (Flutter), et de backends robustes (Django, FastAPI, Laravel). Je peux prendre en charge un projet de A à Z ou intervenir sur des besoins spécifiques.
         - label: Comment se déroule votre processus de développement ?
           content: |
             Mon processus est collaboratif et itératif : analyse des besoins, conception technique, développement avec revues régulières, tests approfondis, puis déploiement. J'adapte ma méthode selon la taille et les contraintes du projet, en gardant toujours une communication transparente.
@@ -101,10 +92,31 @@ faq:
         - label: Utilisez-vous l'IA dans votre travail ?
           content: |
             Oui, j'intègre des outils d'IA comme GitHub Copilot, ChatGPT et Gemini pour augmenter ma productivité de 30-40%. Cela me permet de me concentrer sur l'architecture et la logique métier tout en accélérant les tâches répétitives, sans jamais compromettre la qualité du code.
+    - title: Tarifs & Délais
+      questions:
+        - label: Comment facturez-vous vos projets ?
+          content: |
+            Je propose deux modes de facturation : au forfait pour les projets avec un périmètre bien défini, ou en régie (journalier/horaire) pour les missions en cours ou avec des besoins évolutifs. Nous discutons ensemble de la formule la plus adaptée à votre projet.
+        - label: Quel est votre tarif journalier ?
+          content: |
+            Mon TJM (Taux Journalier Moyen) varie selon la complexité du projet, les technologies impliquées et la durée de la mission. Contactez-moi pour obtenir un devis personnalisé adapté à vos besoins spécifiques.
+        - label: Combien de temps prend un projet type ?
+          content: |
+            Cela dépend énormément du périmètre. Une landing page peut prendre 1-2 semaines, une application web complète 2-4 mois, et une app mobile avec backend 3-6 mois. Je fournis toujours une estimation détaillée après l'analyse de vos besoins.
         - label: Proposez-vous de la maintenance après livraison ?
           content: |
             Oui, je propose des contrats de maintenance et de support continu adaptés à vos besoins. Que ce soit pour des corrections de bugs, des évolutions fonctionnelles ou de l'optimisation, je reste disponible pour assurer la pérennité de votre solution.
-            I love the challenge of solving complex problems through design and technology. It's incredibly rewarding to see people interact with something I've created and find it genuinely useful and easy to navigate. Bridging the gap between user needs and technical possibilities is what truly excites me.
-        - label: What are your hobbies outside of work?
+    - title: À propos de moi
+      questions:
+        - label: Où êtes-vous basé ?
           content: |
-            When I'm not designing or coding, I enjoy exploring Boston's neighborhoods, trying out new coffee shops, and hiking in the nearby reservations. I'm also passionate about photography and occasionally contribute to open-source projects.
+            Je suis basé au Bénin et je travaille principalement en remote avec des clients partout dans le monde. Je suis flexible sur les horaires et peux m'adapter à votre fuseau horaire pour les réunions importantes.
+        - label: Quelles sont vos stack techniques préférées ?
+          content: |
+            Pour le web, j'adore travailler avec Vue.js/Nuxt ou React/Next.js côté frontend, et Django ou FastAPI côté backend. Pour le mobile, je privilégie Flutter pour sa capacité à déployer sur iOS et Android avec une seule codebase. J'utilise Tailwind CSS pour le styling dans pratiquement tous mes projets.
+        - label: Pourquoi être devenu développeur ?
+          content: |
+            J'aime relever le défi de résoudre des problèmes complexes à travers le code et la technologie. C'est incroyablement gratifiant de voir des utilisateurs interagir avec quelque chose que j'ai créé et de constater que ça leur facilite vraiment la vie. Transformer une idée en produit concret, c'est magique.
+        - label: Que faites-vous en dehors du code ?
+          content: |
+            En dehors du dev, je suis passionné de musique et de jeux vidéos. J'aime aussi découvrir et tester de nouveaux outils pour améliorer ma productivité et optimiser mon workflow au quotidien.

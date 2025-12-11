@@ -32,6 +32,5 @@ useSeoMeta({
     <LandingTechStack />
     <LandingTestimonials :page />
     <LandingFAQ :page />
-    <LandingCTA />
   </UPage>
 </template>

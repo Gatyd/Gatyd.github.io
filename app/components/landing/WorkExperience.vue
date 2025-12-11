@@ -1,9 +1,19 @@
 <script setup lang="ts">
 import type { IndexCollectionItem } from '@nuxt/content'
 
+const colorMode = useColorMode()
+
 defineProps<{
   page: IndexCollectionItem
 }>()
+
+const getCompanyColor = (company: any) => {
+  // Si c'est Upwork (blanc), adapter selon le mode
+  if (company.color === '#FFFFFF' || company.color === '#FFF') {
+    return colorMode.value === 'dark' ? '#FFFFFF' : '#000000'
+  }
+  return company.color
+}
 </script>
 
 <template>
@@ -32,18 +42,25 @@ defineProps<{
           <USeparator />
           <ULink
             class="flex items-center gap-1"
-            :to="experience.company.url"
-            target="_blank"
+            :to="experience.company.url !=='#' ? experience.company.url : undefined"
+            :target="experience.company.url !=='#' ? '_blank' : undefined"
           >
             <span class="text-sm">
               {{ experience.position }}
             </span>
             <div
-              class="inline-flex items-center gap-1"
-              :style="{ color: experience.company.color }"
+              class="inline-flex items-center gap-2"
             >
-              <span class="font-medium">{{ experience.company.name }}</span>
-              <UIcon :name="experience.company.logo" />
+              <ClientOnly>
+                <span class="font-medium" :style="{ color: getCompanyColor(experience.company) }">
+                  {{ experience.company.name }}
+                </span>
+                <template #fallback>
+                  <span class="font-medium" :style="{ color: experience.company.color === '#FFFFFF' || experience.company.color === '#FFF' ? '#FFFFFF' : experience.company.color }">
+                    {{ experience.company.name }}
+                  </span>
+                </template>
+              </ClientOnly>
             </div>
           </ULink>
         </Motion>
@@ -51,7 +68,3 @@ defineProps<{
     </template>
   </UPageSection>
 </template>
-
-<style scoped>
-
-</style>

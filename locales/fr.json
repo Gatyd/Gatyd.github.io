@@ -10,7 +10,8 @@
     "title": "Salut, je suis Thierry Aplogan",
     "subtitle": "Développeur Full-Stack",
     "description": "Je crée des expériences digitales qui favorisent la croissance et transforment les idées en solutions évolutives.",
-    "available": "Disponible pour des projets",
+    "available": "Disponible pour nouveaux projets",
+    "notAvailable": "Non disponible actuellement",
     "cta": "Me contacter"
   },
   "about": {
@@ -41,7 +42,9 @@
   },
   "techStack": {
     "title": "Stack Technique",
-    "description": "Les technologies que j'utilise au quotidien pour créer des solutions performantes."
+    "description": "Les technologies que j'utilise au quotidien pour créer des solutions performantes.",
+    "languages": "Langages",
+    "frameworksLibs": "Frameworks & Bibliothèques"
   },
   "cta": {
     "title": "Un projet en tête ?",
