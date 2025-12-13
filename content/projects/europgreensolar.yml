@@ -1,0 +1,21 @@
+title: Europ'Green Solar
+slug: europgreensolar
+description: Logiciel de gestion des projets d'installation solaire visant à optimiser et à centraliser la gestion des différentes étapes d'un projet d'installation solaire.
+date: 2025-10-15
+cover: /europgreensolar/index.png
+type: Web
+order: 1
+technologies:
+  - Nuxt 3
+  - Django REST Framework
+  - Celery
+  - Redis
+links:
+  - label: Démo en ligne
+    to: https://egs-connect.fr/
+    icon: i-lucide-external-link
+features:
+  - Gestion des visites techniques
+  - Suivi des démarches administratives
+  - Gestion des devis et factures
+  - Suivi client et maintenance

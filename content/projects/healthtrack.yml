@@ -1,11 +1,13 @@
 title: HealthTrack
+slug: healthtrack
 description: Application mobile d'identification numérique pour des soins de santé accessibles et personnalisés avec intégration e-Signet.
-date: 2024-03-01
+date: 2025-03-01
 cover: /healthtrack/logo.png
 type: Mobile
+order: 3
 technologies:
   - Flutter
-  - Firebase
+  - Django REST Framework
   - e-Signet Integration
   - QR Code Scanner
 videoDemo: /healthtrack/demo.mp4

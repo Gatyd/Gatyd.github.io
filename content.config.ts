@@ -92,20 +92,20 @@ export default defineContentConfig({
       source: 'projects/*.yml',
       schema: z.object({
         title: z.string().nonempty(),
+        slug: z.string().nonempty(),
         description: z.string().nonempty(),
         cover: z.string().nonempty().editor({ input: 'media' }),
         date: z.date(),
         type: z.string(),
+        order: z.number().optional(),
         technologies: z.array(z.string()),
         links: z.array(createButtonSchema()).optional(),
         features: z.array(z.string()).optional(),
-        videoDemo: z.object({
-          url: z.string(),
-          chapters: z.array(z.object({
-            title: z.string(),
-            time: z.string()
-          })).optional()
-        }).optional()
+        videoDemo: z.string().optional(),
+        chapters: z.array(z.object({
+          title: z.string(),
+          time: z.number()
+        })).optional()
       })
     }),
     projectsPage: defineCollection({

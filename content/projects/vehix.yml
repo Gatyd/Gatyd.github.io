@@ -1,0 +1,39 @@
+title: Vehix
+slug: vehix
+description: Application mobile Flutter de location de véhicules avec gestion complète des réservations et paiements.
+date: 2025-04-15
+cover: /vehix/logo.png
+type: Mobile
+order: 4
+technologies:
+  - Flutter
+  - Dart
+  - Django REST Framework
+  - MySQL
+videoDemo: /vehix/demo.mp4
+chapters:
+  - time: 0
+    title: Connexion
+  - time: 5
+    title: Tableau de bord
+  - time: 11
+    title: Notifications
+  - time: 22
+    title: Gestion des véhicules
+  - time: 49
+    title: Tri et filtrage des véhicules
+  - time: 69
+    title: Création de compte utilisateur
+  - time: 76.9
+    title: Location de véhicule
+  - time: 113
+    title: Gestion des locations
+  - time: 136
+    title: Paramètres
+features:
+  - Catalogue de véhicules avec filtres avancés
+  - Système de réservation en temps réel
+  - Paiement sécurisé intégré
+  - Notifications push
+  - Historique des locations
+  - Interface utilisateur et administrateur

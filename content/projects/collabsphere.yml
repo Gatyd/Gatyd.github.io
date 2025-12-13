@@ -1,13 +1,15 @@
 title: CollabSphere
+slug: collabsphere
 description: Application web collaborative de gestion de projets et tâches en équipe avec notifications en temps réel.
-date: 2023-06-20
+date: 2024-06-20
 cover: /collabsphere/index.png
 type: Web
+order: 5
 technologies:
-  - Vue.js 3
+  - Laravel
   - Tailwind CSS
-  - Django
-  - WebSocket
+  - Livewire
+  - MySQL
 videoDemo: /collabsphere/demo.mp4
 chapters:
   - time: 0

@@ -1,13 +1,15 @@
 title: TRANSIMPEX
+slug: transimpex
 description: Application web de gestion de transport et logistique pour optimiser les opérations de TransImpex Sarl.
 date: 2023-12-01
 cover: /transimpex/index.png
 type: Web
+order: 6
 technologies:
-  - Vue.js
+  - Nuxt 3
   - Tailwind CSS
   - Django
-  - Python
+  - MySQL
 links:
   - label: Voir le site
     to: https://transimpexsas.com

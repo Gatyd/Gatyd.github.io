@@ -1,8 +1,10 @@
 title: NephroCare
+slug: nephrocare
 description: Application web de gestion et suivi des patients atteints de maladie rénale chronique.
-date: 2023-10-15
+date: 2025-10-15
 cover: /nephrocare/index.png
 type: Web
+order: 2
 technologies:
   - Nuxt 3
   - Tailwind CSS
