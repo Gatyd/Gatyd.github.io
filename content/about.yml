@@ -1,27 +1,29 @@
-title: About Me
-description: Learn more about my journey as a Boston-based UX/UI Designer & Front-End Developer, my design philosophy, and my passion for crafting intuitive digital experiences.
+title: À propos de moi
+description: En savoir plus sur mon parcours en tant que développeur full-stack basé au Bénin, ma philosophie de développement, et ma passion pour la création d'expériences digitales intuitives et performantes.
 content: |
-  Hi, I'm **Emma Thompson**, a UX/UI Designer and Front-End Developer based right here in Boston. For the past six years, I've been immersed in the world of digital product creation, focusing on building experiences that are not just functional, but genuinely intuitive and engaging for users.
+  Salut, je suis **Thierry Aplogan**, développeur full-stack passionné par la création d'applications web et mobile qui résolvent de vrais problèmes.
 
-  My path started at **Boston University**, where I earned a degree in Interactive Design. It was there I discovered my dual passion for the visual language of design and the logical puzzle of code. Since then, I've honed my skills in both areas, believing that the best digital products are born from a deep understanding of both aesthetics and implementation.
+  Mon parcours a débuté il y a quelques années avec une curiosité insatiable pour la technologie et le désir de comprendre comment fonctionnent les applications que nous utilisons quotidiennement. Depuis, je me suis spécialisé dans le développement moderne avec des technologies comme Vue.js, Nuxt, React, Next.js pour le frontend, et Django, FastAPI, Laravel pour le backend. J'ai aussi une expertise solide en développement mobile avec Flutter.
 
-  ### My Design Philosophy
+  ### Ma philosophie de développement
 
-  My design philosophy is rooted in **empathy** and **problem-solving**. I believe great design starts with understanding the 'why' – the user's needs, motivations, and pain points. I use research, iterative prototyping (often with tools like Figma), and user testing to ensure the solutions I build are truly effective.
+  Ma philosophie repose sur trois piliers : **simplicité**, **efficacité** et **pragmatisme**. Je crois fermement qu'une bonne solution technique n'est pas nécessairement la plus complexe, mais celle qui résout le problème réel de manière élégante et maintenable.
 
-  I strive to create interfaces that feel effortless, where functionality and beauty work hand-in-hand. Whether I'm crafting pixel-perfect UIs or writing clean Vue.js/Nuxt.js code, my focus is always on creating value for the end-user.
+  Je privilégie une approche itérative, avec des retours fréquents et une communication transparente. Que je travaille sur une interface utilisateur ou sur l'architecture backend, mon objectif est toujours de créer de la valeur pour l'utilisateur final.
 
-  ### What Drives Me
+  ### Ce qui me motive
 
-  What keeps me excited about this work is the constant learning and the challenge of translating complex ideas into simple, elegant solutions. There's nothing more rewarding than seeing a design come to life and knowing it's making someone's digital interaction easier or more enjoyable.
+  Ce qui me passionne dans ce métier, c'est la satisfaction de transformer une idée abstraite en un produit concret et fonctionnel. J'aime particulièrement les projets qui ont un impact direct sur le quotidien des utilisateurs, que ce soit une application de gestion pour une PME ou un outil innovant pour une startup.
 
-  ### Beyond the Screen
+  Je suis aussi un fervent utilisateur d'outils d'IA comme GitHub Copilot, ce qui me permet d'accélérer mon workflow et de me concentrer sur l'architecture et la logique métier plutôt que sur les tâches répétitives.
 
-  When I'm not designing or coding, you might find me exploring Boston's latest coffee shops, hiking nearby trails, or occasionally contributing to open-source projects.
+  ### Au-delà du code
 
-  Thanks for stopping by. Feel free to browse my [projects](/projects) or [get in touch](/#contact) if you'd like to collaborate!
+  En dehors du développement, je suis passionné de musique et de jeux vidéos. J'aime aussi découvrir de nouveaux outils et techniques pour optimiser ma productivité au quotidien.
+
+  Merci d'avoir pris le temps de me découvrir. N'hésitez pas à consulter mes [projets](/projects) ou à [me contacter](/#contact) si vous souhaitez collaborer !
 images:
-  - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My coffee workspace
-  - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My trip to Tokyo
+  - src: /about/workspace.jpg
+    alt: Mon espace de travail
+  - src: /about/setup.jpg
+    alt: Mon setup de développement

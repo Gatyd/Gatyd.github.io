@@ -1,62 +1,47 @@
-# Nuxt Portfolio Template
+﻿# Portfolio Thierry Aplogan
 
-[![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
+Portfolio professionnel de Thierry Aplogan, développeur full-stack spécialisé en Vue.js, Nuxt, React, Flutter, Django et FastAPI.
 
-Use this template to create your own portfolio with [Nuxt UI](https://ui.nuxt.com).
+Construit avec [Nuxt UI](https://ui.nuxt.com) et [Nuxt Content](https://content.nuxt.com).
 
-- [Live demo](https://portfolio-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/getting-started/installation)
+##  Stack Technique
 
-<a href="https://portfolio-template.nuxt.dev/" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ui.nuxt.com/assets/templates/nuxt/portfolio-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png">
-    <img alt="Nuxt Portfolio Template" src="https://ui.nuxt.com/assets/templates/nuxt/portfolio-dark.png">
-  </picture>
-</a>
+- **Frontend** : Vue.js, Nuxt 3, React, Next.js, Tailwind CSS
+- **Mobile** : Flutter
+- **Backend** : Django, FastAPI, Laravel, Python, PHP
+- **UI** : Nuxt UI v4
+- **Content** : Nuxt Content (YAML + Markdown)
+- **Internationalisation** : @nuxtjs/i18n (FR/EN)
+- **Animations** : Motion-v
+- **TypeScript** : Type safety complète
 
-## Quick Start
+##  Internationalisation
 
-```bash [Terminal]
-npm create nuxt@latest -- -t github:nuxt-ui-templates/portfolio
-```
+Le site est disponible en français (défaut) et en anglais. La stratégie i18n utilise `no_prefix` avec détection automatique de la langue du navigateur.
 
-## Deploy your own
+##  Gestion du contenu
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-name=portfolio&repository-url=https%3A%2F%2Fgithub.com%2Fnuxt-ui-templates%2Fportfolio&demo-image=https%3A%2F%2Fui.nuxt.com%2Fassets%2Ftemplates%2Fnuxt%2Fportfolio-dark.png&demo-url=https%3A%2F%2Fportfolio-template.nuxt.dev%2F&demo-title=Nuxt%20Portfolio%20Template&demo-description=A%20sleek%20portfolio%20template%20to%20showcase%20your%20work%2C%20skills%20and%20blog%20powered%20by%20Nuxt%20Content.)
+Le contenu est géré via des fichiers YAML dans `content/` :
+- **index.yml** : Contenu de la page d'accueil (hero, about, experience, testimonials, FAQ)
+- **projects/*.yml** : Projets individuels
+- **about.yml** : Page À propos
 
-## Setup
+Les traductions des textes UI sont dans `locales/fr.json` et `locales/en.json`.
 
-Make sure to install the dependencies:
+##  Design
 
-```bash
-pnpm install
-```
+- **Minimaliste** : Design épuré, spacieux, Swiss/International aesthetic
+- **Couleur principale** : Cyan (#06B6D4) utilisé avec parcimonie
+- **Dark mode** : Support complet avec détection automatique
+- **Animations** : Motion subtiles et micro-interactions
 
-## Development Server
+##  Contact
 
-Start the development server on `http://localhost:3000`:
+- **Email** : devgatyd@gmail.com
+- **GitHub** : [github.com/Gatyd](https://github.com/Gatyd)
+- **LinkedIn** : [linkedin.com/in/thierry-aplogan](https://linkedin.com/in/thierry-aplogan)
+- **Upwork** : [upwork.com/freelancers/thierrya](https://www.upwork.com/freelancers/thierrya?mp_source=share)
 
-```bash
-pnpm dev
-```
+##  License
 
-## Production
-
-Build the application for production:
-
-```bash
-pnpm build
-```
-
-Locally preview production build:
-
-```bash
-pnpm preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-## Renovate integration
-
-Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
+ 2025 Thierry Aplogan. Tous droits réservés.

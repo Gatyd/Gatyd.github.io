@@ -26,7 +26,11 @@ const createAuthorSchema = () => z.object({
   username: z.string().optional(),
   twitter: z.string().optional(),
   to: z.string().optional(),
-  avatar: createImageSchema().optional()
+  avatar: z.object({
+    src: z.string().optional(),
+    alt: z.string().optional(),
+    srcset: z.string().optional()
+  }).optional()
 })
 
 const createTestimonialSchema = () => z.object({
@@ -40,26 +44,40 @@ export default defineContentConfig({
       type: 'page',
       source: 'index.yml',
       schema: z.object({
+        seo: z.object({
+          title: z.string(),
+          description: z.string()
+        }),
+        title: z.string(),
+        description: z.string(),
         hero: z.object({
           links: z.array(createButtonSchema()),
           images: z.array(createImageSchema())
         }),
-        about: createBaseSchema(),
-        experience: createBaseSchema().extend({
+        about: z.object({
+          title: z.string(),
+          description: z.string(),
+          link: z.string().optional()
+        }),
+        experience: z.object({
+          title: z.string(),
           items: z.array(z.object({
-            date: z.date(),
+            date: z.string(),
             position: z.string(),
             company: z.object({
               name: z.string(),
               url: z.string(),
-              logo: z.string().editor({ input: 'icon' }),
+              image: z.string().optional(),
+              logo: z.string().optional().editor({ input: 'icon' }),
               color: z.string()
-            })
+            }),
+            description: z.string().optional()
           }))
         }),
         testimonials: z.array(createTestimonialSchema()),
-        blog: createBaseSchema(),
-        faq: createBaseSchema().extend({
+        faq: z.object({
+          title: z.string(),
+          description: z.string(),
           categories: z.array(
             z.object({
               title: z.string().nonempty(),
@@ -69,7 +87,8 @@ export default defineContentConfig({
                   content: z.string().nonempty()
                 })
               )
-            }))
+            })
+          )
         })
       })
     }),
@@ -79,51 +98,37 @@ export default defineContentConfig({
       schema: z.object({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
-        image: z.string().nonempty().editor({ input: 'media' }),
-        url: z.string().nonempty(),
-        tags: z.array(z.string()),
-        date: z.date()
-      })
-    }),
-    blog: defineCollection({
-      type: 'page',
-      source: 'blog/*.md',
-      schema: z.object({
-        minRead: z.number(),
+        cover: z.string().nonempty().editor({ input: 'media' }),
         date: z.date(),
-        image: z.string().nonempty().editor({ input: 'media' }),
-        author: createAuthorSchema()
+        type: z.string(),
+        technologies: z.array(z.string()),
+        links: z.array(createButtonSchema()).optional(),
+        features: z.array(z.string()).optional(),
+        videoDemo: z.object({
+          url: z.string(),
+          chapters: z.array(z.object({
+            title: z.string(),
+            time: z.string()
+          })).optional()
+        }).optional()
       })
     }),
-    pages: defineCollection({
+    projectsPage: defineCollection({
       type: 'page',
-      source: [
-        { include: 'projects.yml' },
-        { include: 'blog.yml' }
-      ],
+      source: 'projects.yml',
       schema: z.object({
+        title: z.string(),
+        description: z.string(),
         links: z.array(createButtonSchema())
-      })
-    }),
-    speaking: defineCollection({
-      type: 'page',
-      source: 'speaking.yml',
-      schema: z.object({
-        links: z.array(createButtonSchema()),
-        events: z.array(z.object({
-          category: z.enum(['Live talk', 'Podcast', 'Conference']),
-          title: z.string(),
-          date: z.date(),
-          location: z.string(),
-          url: z.string().optional()
-        }))
       })
     }),
     about: defineCollection({
       type: 'page',
       source: 'about.yml',
       schema: z.object({
-        content: z.object({}),
+        title: z.string(),
+        description: z.string(),
+        content: z.string(),
         images: z.array(createImageSchema())
       })
     })
