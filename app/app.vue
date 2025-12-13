@@ -19,9 +19,8 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Thierry Aplogan',
-  ogImage: '/og-image.jpg',
-  twitterImage: '/og-image.jpg',
+  ogImage: '/og-image.png',
+  twitterImage: '/og-image.png',
   twitterCard: 'summary_large_image'
 })
 
