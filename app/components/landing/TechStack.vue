@@ -38,7 +38,7 @@ const frameworks = [
       {{ t('techStack.description') }}
     </template>
 
-    <div class="space-y-8 mt-8">
+    <div class="space-y-8">
       <!-- Langages -->
       <div>
         <h3 class="text-sm font-medium text-muted mb-4">

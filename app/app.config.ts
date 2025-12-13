@@ -32,7 +32,7 @@ export default defineAppConfig({
       'aria-label': 'GitHub'
     }, {
       'icon': 'i-simple-icons-linkedin',
-      'to': 'https://linkedin.com/in/thierry-aplogan',
+      'to': 'https://linkedin.com/in/thierry-aplogan-djibode',
       'target': '_blank',
       'aria-label': 'LinkedIn'
     }]

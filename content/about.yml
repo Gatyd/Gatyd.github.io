@@ -1,29 +1,67 @@
 title: À propos de moi
-description: En savoir plus sur mon parcours en tant que développeur full-stack basé au Bénin, ma philosophie de développement, et ma passion pour la création d'expériences digitales intuitives et performantes.
-content: |
-  Salut, je suis **Thierry Aplogan**, développeur full-stack passionné par la création d'applications web et mobile qui résolvent de vrais problèmes.
+description: Découvrez mon parcours, de l'étudiant curieux aux premières lignes de code, jusqu'à devenir développeur full-stack passionné par la création d'applications web et mobiles performantes.
+intro: |
+  Salut ! Je suis **Thierry Aplogan**, développeur full-stack basé au Bénin. J'ai un parcours classique d'ingénieur logiciel : formation académique solide, expériences concrètes en entreprise, et une passion grandissante pour le code.
+  Ce qui me distingue ? Je ne me contente pas d'écrire du code qui fonctionne. Je cherche à résoudre de vrais problèmes, à simplifier les processus, et à créer des solutions qui facilitent vraiment la vie des utilisateurs.
 
-  Mon parcours a débuté il y a quelques années avec une curiosité insatiable pour la technologie et le désir de comprendre comment fonctionnent les applications que nous utilisons quotidiennement. Depuis, je me suis spécialisé dans le développement moderne avec des technologies comme Vue.js, Nuxt, React, Next.js pour le frontend, et Django, FastAPI, Laravel pour le backend. J'ai aussi une expertise solide en développement mobile avec Flutter.
+experiences:
+  - date: "2025 à Présent"
+    title: "Freelance"
+    description:
+      - "Lancement de mon activité de développement indépendant"
+      - "Projets variés pour des clients internationaux (web, mobile, backend)"
+      - "Collaboration sur des missions diversifiées avec des équipes à distance"
+  
+  - date: "2025"
+    title: "Dev Web Full-Stack"
+    company: "Polygone +"
+    description:
+      - "Développement du module 'Gestion commerciale' d'un ERP Web"
+      - "Intégration de l'API du MECEF pour la normalisation des factures"
+      - "Gestion complète d'un module critique de bout en bout"
+  
+  - date: "2024"
+    title: "Dev Web Backend"
+    company: "Transimpex BJ"
+    description:
+      - "Participation à la conception d'une plateforme interne de gestion logistique"
+      - "Développement d'APIs REST avec Django et Django REST Framework"
+      - "Travail en équipe sur un projet d'envergure avec des contraintes réelles"
 
-  ### Ma philosophie de développement
+education:
+  - date: "2025"
+    title: "Licence en Génie Logiciel"
+    company: "Institut de Formation et de Recherche en Informatique (IFRI)"
+    description:
+      - "Formation complète en développement web (frontend & backend), mobile et desktop"
+      - "Gestion de projet, modélisation UML et administration de bases de données"
+      - "Apprentissage des fondamentaux : mathématiques, logique, algorithmique, structures de données"
+      - "Formations complémentaires sur OpenClassroom et obtention de plusieurs certifications"
+  
+  - date: "2022"
+    title: "Baccalauréat Scientifique"
 
-  Ma philosophie repose sur trois piliers : **simplicité**, **efficacité** et **pragmatisme**. Je crois fermement qu'une bonne solution technique n'est pas nécessairement la plus complexe, mais celle qui résout le problème réel de manière élégante et maintenable.
+distinctions:
+  - date: "2025"
+    title: "Hackathon LevelUp - 2e place"
+    company: "AFG Assurance & Future Studio"
+    description:
+      - "Challenge : améliorer l'expérience de souscription d'assurance mobile"
+      - "Solution développée : OCR pour extraction automatique des données (ID, permis, carte grise)"
+      - "Chatbot IA pour guider les utilisateurs dans le jargon complexe de l'assurance"
+      - "Équipe de 4 (2 designers, 2 devs) - Rôle : Dev Backend"
 
-  Je privilégie une approche itérative, avec des retours fréquents et une communication transparente. Que je travaille sur une interface utilisateur ou sur l'architecture backend, mon objectif est toujours de créer de la valeur pour l'utilisateur final.
+vision: |
+  ### Ma vision du développement
 
-  ### Ce qui me motive
+  Je vois le développement comme un **outil de résolution de problèmes**, pas comme une fin en soi. Mon objectif est de créer des solutions simples, efficaces et maintenables qui répondent aux besoins réels des utilisateurs.
 
-  Ce qui me passionne dans ce métier, c'est la satisfaction de transformer une idée abstraite en un produit concret et fonctionnel. J'aime particulièrement les projets qui ont un impact direct sur le quotidien des utilisateurs, que ce soit une application de gestion pour une PME ou un outil innovant pour une startup.
+  L'IA m'intéresse particulièrement. Au-delà de l'utilisation quotidienne d'outils comme GitHub Copilot ou ChatGPT, je cherche à approfondir mes connaissances dans ce domaine : comprendre comment fonctionnent les modèles, contribuer à l'entraînement de modèles utiles, et même créer mes propres solutions d'IA. C'est une direction que j'explore activement et qui correspond à l'évolution naturelle du métier de développeur.
 
-  Je suis aussi un fervent utilisateur d'outils d'IA comme GitHub Copilot, ce qui me permet d'accélérer mon workflow et de me concentrer sur l'architecture et la logique métier plutôt que sur les tâches répétitives.
+  Ma philosophie reste simple : **résoudre des problèmes réels avec des solutions efficaces**.
 
-  ### Au-delà du code
-
-  En dehors du développement, je suis passionné de musique et de jeux vidéos. J'aime aussi découvrir de nouveaux outils et techniques pour optimiser ma productivité au quotidien.
-
-  Merci d'avoir pris le temps de me découvrir. N'hésitez pas à consulter mes [projets](/projects) ou à [me contacter](/#contact) si vous souhaitez collaborer !
-images:
-  - src: /about/workspace.jpg
-    alt: Mon espace de travail
-  - src: /about/setup.jpg
-    alt: Mon setup de développement
+# images:
+#   - src: /about/workspace.jpg
+#     alt: Mon espace de travail
+#   - src: /about/setup.jpg
+#     alt: Mon setup de développement

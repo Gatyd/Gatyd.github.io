@@ -38,21 +38,18 @@ experience:
       date: "2025 - Présent"
       company:
         name: Upwork
-        image: "/companies/upwork.png"
         url: "https://www.upwork.com/freelancers/thierrya?mp_source=share"
         color: "#FFFFFF"
     - position: "Dev web full-stack"
       date: "2025"
       company:
         name: Polygone +
-        image: "/companies/polygone.png"
         url: "#"
         color: "#E0AD78"
     - position: "Dev web backend"
       date: "2024"
       company:
         name: Transimpex BJ
-        image: "/companies/transimpex.png"
         url: "#"
         color: "#5088A1"
 testimonials:

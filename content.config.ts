@@ -1,10 +1,5 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
-const createBaseSchema = () => z.object({
-  title: z.string(),
-  description: z.string()
-})
-
 const createButtonSchema = () => z.object({
   label: z.string(),
   icon: z.string().optional(),
@@ -128,8 +123,27 @@ export default defineContentConfig({
       schema: z.object({
         title: z.string(),
         description: z.string(),
-        content: z.string(),
-        images: z.array(createImageSchema())
+        intro: z.string(),
+        experiences: z.array(z.object({
+          date: z.string(),
+          title: z.string(),
+          company: z.string().optional(),
+          description: z.array(z.string())
+        })),
+        education: z.array(z.object({
+          date: z.string(),
+          title: z.string(),
+          company: z.string().optional(),
+          description: z.array(z.string())
+        })),
+        distinctions: z.array(z.object({
+          date: z.string(),
+          title: z.string(),
+          company: z.string().optional(),
+          description: z.array(z.string())
+        })),
+        vision: z.string(),
+        images: z.array(createImageSchema()).optional()
       })
     })
   }
