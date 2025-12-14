@@ -1,11 +1,16 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
-
 const { footer, global } = useAppConfig()
+const { t } = useI18n()
 
-defineProps<{
-  page: IndexCollectionItem
-}>()
+// Images pour le marquee
+const heroImages = [
+  { src: '/hero/europgreensolar.png', alt: "Europ'Green Solar" },
+  { src: '/hero/nephrocare.png', alt: 'NephroCare' },
+  { src: '/hero/healthtrack.png', alt: 'HealthTrack' },
+  { src: '/hero/collabsphere.png', alt: 'CollabSphere' },
+  { src: '/hero/vehix.png', alt: 'Vehix' },
+  { src: '/hero/transimpex.png', alt: 'Transimpex' }
+]
 </script>
 
 <template>
@@ -58,7 +63,7 @@ defineProps<{
           delay: 0.1
         }"
       >
-        {{ page.title }}
+        {{ t('hero.title') }}
       </Motion>
     </template>
 
@@ -79,7 +84,7 @@ defineProps<{
           delay: 0.3
         }"
       >
-        {{ page.description }}
+        {{ t('hero.description') }}
       </Motion>
     </template>
 
@@ -100,16 +105,17 @@ defineProps<{
           delay: 0.5
         }"
       >
-        <div
-          v-if="page.hero.links"
-          class="flex items-center gap-2"
-        >
-          <UButton v-bind="page.hero.links[0]" color="neutral" />
+        <div class="flex items-center gap-2">
+          <UButton 
+            to="mailto:devgatyd@gmail.com"
+            :label="t('hero.contact')"
+            color="neutral" 
+          />
           <UButton
             :color="global.available ? 'success' : 'warning'"
             variant="ghost"
             class="gap-2"
-            :label="global.available ? $t('hero.available') : $t('hero.notAvailable')"
+            :label="global.available ? t('hero.available') : t('hero.notAvailable')"
           >
             <template #leading>
               <span class="relative flex size-2">
@@ -159,7 +165,7 @@ defineProps<{
       class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:40s]"
     >
       <Motion
-        v-for="(img, index) in page.hero.images"
+        v-for="(img, index) in heroImages"
         :key="index"
         :initial="{
           scale: 1.1,

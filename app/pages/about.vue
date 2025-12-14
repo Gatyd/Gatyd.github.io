@@ -1,28 +1,59 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('about', () => {
-  return queryCollection('about').first()
-})
-if (!page.value) {
-  throw createError({
-    statusCode: 404,
-    statusMessage: 'Page not found',
-    fatal: true
-  })
-}
-
+const { t, tm, te } = useI18n()
 const { global } = useAppConfig()
 
+// Récupérer les données de timeline depuis les traductions
+const experiences = computed(() => {
+  const items = tm('timeline.experiences') as any[]
+  const { t: tFn, te: teFn } = useI18n()
+  return items.map((_, index) => {
+    const descriptions = tm(`timeline.experiences.${index}.description`) as any[]
+    return {
+      title: tFn(`timeline.experiences.${index}.title`),
+      date: tFn(`timeline.experiences.${index}.date`),
+      company: teFn(`timeline.experiences.${index}.company`) ? tFn(`timeline.experiences.${index}.company`) : undefined,
+      description: descriptions.map((__, dIndex) => tFn(`timeline.experiences.${index}.description.${dIndex}`))
+    }
+  })
+})
+const education = computed(() => {
+  const items = tm('timeline.education') as any[]
+  const { t: tFn, te: teFn } = useI18n()
+  return items.map((_, index) => {
+    const descriptions = tm(`timeline.education.${index}.description`) as any[]
+    return {
+      title: tFn(`timeline.education.${index}.title`),
+      date: tFn(`timeline.education.${index}.date`),
+      company: teFn(`timeline.education.${index}.company`) ? tFn(`timeline.education.${index}.company`) : undefined,
+      description: descriptions.map((__, dIndex) => tFn(`timeline.education.${index}.description.${dIndex}`))
+    }
+  })
+})
+const distinctions = computed(() => {
+  const items = tm('timeline.distinctions') as any[]
+  const { t: tFn, te: teFn } = useI18n()
+  return items.map((_, index) => {
+    const descriptions = tm(`timeline.distinctions.${index}.description`) as any[]
+    return {
+      title: tFn(`timeline.distinctions.${index}.title`),
+      date: tFn(`timeline.distinctions.${index}.date`),
+      company: teFn(`timeline.distinctions.${index}.company`) ? tFn(`timeline.distinctions.${index}.company`) : undefined,
+      description: descriptions.map((__, dIndex) => tFn(`timeline.distinctions.${index}.description.${dIndex}`))
+    }
+  })
+})
+
 useSeoMeta({
-  title: page.value?.seo?.title || page.value?.title,
-  ogTitle: page.value?.seo?.title || page.value?.title,
-  description: page.value?.seo?.description || page.value?.description,
-  ogDescription: page.value?.seo?.description || page.value?.description
+  title: t('seo.about.title'),
+  ogTitle: t('seo.about.title'),
+  description: t('seo.about.description'),
+  ogDescription: t('seo.about.description')
 })
 </script>
 
 <template>
-  <UPage v-if="page">
-    <UPageHero :title="page.title" :description="page.description" orientation="horizontal" :ui="{
+  <UPage>
+    <UPageHero :title="t('about.page.title')" :description="t('about.page.description')" orientation="horizontal" :ui="{
       container: 'lg:flex sm:flex-row items-center',
       title: '!mx-0 text-left',
       description: '!mx-0 text-left',
@@ -35,15 +66,15 @@ useSeoMeta({
       container: '!pt-0'
     }">
       <!-- Introduction -->
-      <MDC :value="page.intro" unwrap="p" class="mb-4" />
+      <p class="text-lg text-muted mb-8 whitespace-pre-line">{{ t('about.page.intro') }}</p>
 
       <!-- Expériences professionnelles -->
       <div>
         <h2 class="text-2xl font-bold mb-8">
-          Expériences professionnelles
+          {{ t('about.sections.experiences') }}
         </h2>
         <div class="space-y-8">
-          <div v-for="(exp, index) in page.experiences" :key="index" class="relative pl-6 mb-8 border-l-2 border-muted">
+          <div v-for="(exp, index) in experiences" :key="index" class="relative pl-6 mb-8 border-l-2 border-muted">
             <h4 class="text-lg font-semibold mb-1 leading-tight">{{ exp.title }}</h4>
             <h5 class="text-sm font-medium text-muted mb-3">{{ exp.date }}</h5>
             <p v-if="exp.company" class="flex items-center gap-2 text-primary font-medium mb-3">
@@ -60,10 +91,10 @@ useSeoMeta({
       <!-- Éducation -->
       <div>
         <h2 class="text-2xl font-bold mb-8">
-          Éducation
+          {{ t('about.sections.education') }}
         </h2>
         <div class="space-y-8">
-          <div v-for="(edu, index) in page.education" :key="index" class="relative pl-6 mb-8 border-l-2 border-muted">
+          <div v-for="(edu, index) in education" :key="index" class="relative pl-6 mb-8 border-l-2 border-muted">
             <h4 class="text-lg font-semibold mb-1 leading-tight">{{ edu.title }}</h4>
             <h5 class="text-sm font-medium text-muted mb-3">{{ edu.date }}</h5>
             <p v-if="edu.company" class="flex items-center gap-2 text-primary font-medium mb-3">
@@ -80,10 +111,10 @@ useSeoMeta({
       <!-- Distinctions -->
       <div>
         <h2 class="text-2xl font-bold mb-8">
-          Distinctions
+          {{ t('about.sections.distinctions') }}
         </h2>
         <div class="space-y-8">
-          <div v-for="(dist, index) in page.distinctions" :key="index" class="relative pl-6 mb-8 border-l-2 border-muted">
+          <div v-for="(dist, index) in distinctions" :key="index" class="relative pl-6 mb-8 border-l-2 border-muted">
             <h4 class="text-lg font-semibold mb-1 leading-tight">{{ dist.title }}</h4>
             <h5 class="text-sm font-medium text-muted mb-3">{{ dist.date }}</h5>
             <p v-if="dist.company" class="flex items-center gap-2 text-primary font-medium mb-3">
@@ -98,12 +129,9 @@ useSeoMeta({
       </div>
 
       <!-- Vision du développement -->
-      <MDC :value="page.vision" unwrap="p" class="mb-12" />
-
-      <!-- Images Polaroid (commentées pour l'instant) -->
-      <div v-if="page.images && page.images.length > 0"
-        class="flex flex-row justify-center items-center py-10 -space-x-8">
-        <PolaroidItem v-for="(image, index) in page.images" :key="index" :image="image" :index />
+      <div class="mt-12">
+        <h2 class="text-2xl font-bold mb-4">{{ t('about.page.visionTitle') }}</h2>
+        <p class="text-lg text-muted whitespace-pre-line">{{ t('about.page.vision') }}</p>
       </div>
     </UPageSection>
   </UPage>

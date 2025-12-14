@@ -1,14 +1,5 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('projects-page', () => {
-  return queryCollection('projectsPage').first()
-})
-if (!page.value) {
-  throw createError({
-    statusCode: 404,
-    statusMessage: 'Page not found',
-    fatal: true
-  })
-}
+const { t } = useI18n()
 
 const { data: projects } = await useAsyncData('projects', () => {
   return queryCollection('projects').all()
@@ -29,11 +20,9 @@ const sortedProjects = computed(() => {
 
 // Fonction pour déterminer le lien du projet
 const getProjectLink = (project: any) => {
-  // Si le projet a un lien externe (hébergé), rediriger directement
   if (project.links && project.links.length > 0) {
     return project.links[0].to
   }
-  // Sinon, aller vers la page détail avec slug
   return `/projects/${project.slug}`
 }
 
@@ -42,22 +31,25 @@ const isExternalLink = (project: any) => {
   return !!(project.links && project.links.length > 0)
 }
 
+// Obtenir le titre et la description traduits d'un projet
+const getProjectTitle = (slug: string) => t(`projects.items.${slug}.title`)
+const getProjectDescription = (slug: string) => t(`projects.items.${slug}.description`)
+
 const { global } = useAppConfig()
 
 useSeoMeta({
-  title: page.value?.seo.title || page.value?.title,
-  ogTitle: page.value?.seo.title || page.value?.title,
-  description: page.value?.seo.description || page.value?.description,
-  ogDescription: page.value?.seo.description || page.value?.description
+  title: t('seo.projects.title'),
+  ogTitle: t('seo.projects.title'),
+  description: t('seo.projects.description'),
+  ogDescription: t('seo.projects.description')
 })
 </script>
 
 <template>
-  <UPage v-if="page">
+  <UPage>
     <UPageHero
-      :title="page.title"
-      :description="page.description"
-      :links="page.links"
+      :title="t('projects.title')"
+      :description="t('projects.description')"
       :ui="{
         title: '!mx-0 text-left',
         description: '!mx-0 text-left',
@@ -67,7 +59,7 @@ useSeoMeta({
       <template #links>
         <UButton
           :to="`mailto:${global.email}`"
-          label="M'envoyer un email"
+          :label="t('projects.sendEmail')"
           icon="i-lucide-mail"
           color="neutral"
         />
@@ -80,15 +72,15 @@ useSeoMeta({
     >
       <Motion
         v-for="(project, index) in sortedProjects"
-        :key="project.title"
+        :key="project.slug"
         :initial="{ opacity: 0, transform: 'translateY(10px)' }"
         :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
         :transition="{ delay: 0.2 * index }"
         :in-view-options="{ once: true }"
       >
         <UPageCard
-          :title="project.title"
-          :description="project.description"
+          :title="getProjectTitle(project.slug)"
+          :description="getProjectDescription(project.slug)"
           :to="getProjectLink(project)"
           orientation="horizontal"
           variant="naked"
@@ -129,7 +121,7 @@ useSeoMeta({
               :external="isExternalLink(project)"
               class="text-sm text-primary flex items-center"
             >
-              {{ isExternalLink(project) ? 'Voir le site' : 'Voir la démo' }}
+              {{ isExternalLink(project) ? t('projects.viewSite') : t('projects.viewDemo') }}
               <UIcon
                 :name="isExternalLink(project) ? 'i-lucide-external-link' : 'i-lucide-arrow-right'"
                 class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"
@@ -138,7 +130,7 @@ useSeoMeta({
           </template>
           <img
             :src="project.cover"
-            :alt="project.title"
+            :alt="getProjectTitle(project.slug)"
             class="object-cover w-full h-48 rounded-lg"
           >
         </UPageCard>

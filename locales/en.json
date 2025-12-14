@@ -2,57 +2,276 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "projects": "Projects",
-    "speaking": "Speaking",
-    "contact": "Contact"
+    "projects": "Projects"
+  },
+  "seo": {
+    "home": {
+      "title": "Thierry Aplogan - Full Stack Developer",
+      "description": "Portfolio of Thierry Aplogan, full-stack developer passionate about building modern and performant applications."
+    },
+    "about": {
+      "title": "About - Thierry Aplogan",
+      "description": "Discover my journey, from a curious student to my first lines of code, becoming a full-stack developer."
+    },
+    "projects": {
+      "title": "Projects - Thierry Aplogan",
+      "description": "Discover a selection of projects I've worked on, from modern web applications to cross-platform mobile solutions."
+    }
   },
   "hero": {
-    "title": "Hey, I'm Thierry Aplogan",
-    "subtitle": "Full-Stack Developer",
-    "description": "I build digital experiences that drive growth and transform ideas into scalable solutions.",
-    "available": "Available for projects",
-    "cta": "Get in touch"
+    "title": "Hey, I'm Thierry Aplogan Full Stack Developer",
+    "description": "I transform ideas into performant web and mobile applications. Based in Benin, I create digital solutions that make users' lives easier.",
+    "available": "Available for new projects",
+    "notAvailable": "Currently unavailable",
+    "contact": "Contact me",
+    "viewProjects": "View my projects"
   },
   "about": {
-    "title": "About Me",
-    "description": "Full-stack developer passionate about creating modern, performant applications. I combine technical expertise with creative problem-solving to deliver solutions that exceed expectations."
+    "title": "About",
+    "description": "Full-stack dev with 3+ years of experience, I transform ideas into concrete and performant applications.\n\nI focus on understanding the real problem, simplifying processes, and delivering solutions that truly make users' daily lives easier. No over-engineering, just clean and efficient code that meets the need.",
+    "link": "Learn more",
+    "page": {
+      "title": "About me",
+      "description": "Discover my journey, from a curious student to my first lines of code, becoming a full-stack developer passionate about building web and mobile applications.",
+      "intro": "Hi! I'm Thierry Aplogan, a full-stack developer based in Benin. I have a classic software engineer background: solid academic training, concrete professional experiences, and a growing passion for code.\n\nWhat sets me apart? I don't just write code that works. I seek to solve real problems, simplify processes, and create solutions that truly make users' lives easier.",
+      "visionTitle": "My Development Vision",
+      "vision": "I see development as a problem-solving tool, not an end in itself. My goal is to create simple, efficient, and maintainable solutions that meet users' real needs.\n\nAI particularly interests me. Beyond the daily use of tools like GitHub Copilot or ChatGPT, I'm looking to deepen my knowledge in this area.\n\nMy philosophy remains simple: solve real problems with effective solutions."
+    },
+    "sections": {
+      "experiences": "Professional Experience",
+      "education": "Education",
+      "distinctions": "Distinctions"
+    }
   },
   "experience": {
     "title": "Work Experience",
-    "web": {
-      "title": "Web Development",
-      "description": "Vue.js, Nuxt, Tailwind CSS"
-    },
-    "mobile": {
-      "title": "Mobile Development",
-      "description": "Flutter, iOS, Android"
-    },
-    "backend": {
-      "title": "Backend",
-      "description": "Django, Python, REST APIs"
-    },
-    "ai": {
-      "title": "AI & Productivity",
-      "description": "GitHub Copilot, ChatGPT, Gemini"
+    "items": {
+      "freelance": {
+        "position": "Freelance Web & Mobile Dev",
+        "date": "2025 - Present"
+      },
+      "polygone": {
+        "position": "Full-stack Web Dev",
+        "date": "2025"
+      },
+      "transimpex": {
+        "position": "Backend Web Dev",
+        "date": "2024"
+      }
     }
   },
+  "timeline": {
+    "experiences": [
+      {
+        "date": "2025 to Present",
+        "title": "Freelance",
+        "description": [
+          "Launched my independent development business",
+          "Various projects for international clients (web, mobile, backend)",
+          "Collaboration on diverse missions with remote teams"
+        ]
+      },
+      {
+        "date": "2025",
+        "title": "Full-Stack Web Dev",
+        "company": "Polygone +",
+        "description": [
+          "Development of the 'Commercial Management' module of a Web ERP",
+          "Integration of the MECEF API for invoice standardization",
+          "Complete end-to-end management of a critical module"
+        ]
+      },
+      {
+        "date": "2024",
+        "title": "Backend Web Dev",
+        "company": "Transimpex BJ",
+        "description": [
+          "Participated in designing an internal logistics management platform",
+          "Development of REST APIs with Django and Django REST Framework",
+          "Teamwork on a large-scale project with real constraints"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "date": "2025",
+        "title": "Bachelor's in Software Engineering",
+        "company": "Institut de Formation et de Recherche en Informatique (IFRI)",
+        "description": [
+          "Complete training in web development (frontend & backend), mobile and desktop",
+          "Project management, UML modeling and database administration",
+          "Learning fundamentals: mathematics, logic, algorithms, data structures"
+        ]
+      },
+      {
+        "date": "2022",
+        "title": "Scientific Baccalaureate",
+        "description": []
+      }
+    ],
+    "distinctions": [
+      {
+        "date": "2025",
+        "title": "LevelUp Hackathon - 2nd place",
+        "company": "AFG Assurance & Future Studio",
+        "description": [
+          "Challenge: improve the mobile insurance subscription experience",
+          "Solution developed: OCR for automatic data extraction",
+          "AI Chatbot to guide users",
+          "Team of 4 (2 designers, 2 devs) - Role: Backend Dev"
+        ]
+      }
+    ]
+  },
   "testimonials": {
-    "title": "Client Testimonials"
+    "title": "Client Testimonials",
+    "items": [
+      {
+        "quote": "Thierry transformed our vision into a robust and modern web application. His technical expertise in Vue.js and Django allowed us to launch our platform in record time. He truly understands business needs and proposes pragmatic solutions.",
+        "author": {
+          "name": "Mr Marius",
+          "description": "CEO - Transimpex BJ"
+        }
+      },
+      {
+        "quote": "The medical management application developed by Thierry has significantly improved our efficiency. Intuitive interface, excellent performance, and patient tracking that perfectly meets our needs. A reliable and attentive professional.",
+        "author": {
+          "name": "Dr. Sarah Okonkwo",
+          "description": "Nephrologist - NephroCare Clinic"
+        }
+      },
+      {
+        "quote": "Working with Thierry was a real pleasure. He successfully translated our mockups into a performant and elegant Flutter application. His use of AI tools like GitHub Copilot allows for impressive productivity without sacrificing quality.",
+        "author": {
+          "name": "Alexandre Martin",
+          "description": "Product Manager - Vehix"
+        }
+      }
+    ]
   },
   "techStack": {
     "title": "Tech Stack",
     "description": "Technologies I use daily to build performant solutions.",
     "languages": "Languages",
-    "frameworksLibs": "Frameworks & Libraries"
+    "frameworksLibs": "Frameworks & Libraries",
+    "discoverProjects": "Discover my projects"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Answers to common questions about my services and process.",
+    "categories": [
+      {
+        "title": "Services & Process",
+        "questions": [
+          {
+            "label": "What types of projects do you work on?",
+            "content": "I specialize in developing modern web applications (Vue.js, Nuxt, React, Next.js), cross-platform mobile applications (Flutter), and robust backends (Django, FastAPI, Laravel). I can handle a project from A to Z or work on specific needs."
+          },
+          {
+            "label": "How does your development process work?",
+            "content": "My process is collaborative and iterative: needs analysis, technical design, development with regular reviews, thorough testing, then deployment. I adapt my method according to the size and constraints of the project."
+          },
+          {
+            "label": "Do you work with startups?",
+            "content": "Absolutely! I particularly enjoy helping startups bring their product vision to life. I know how to adapt to the fast pace and frequent pivots while keeping the code maintainable for future growth."
+          },
+          {
+            "label": "Do you use AI in your work?",
+            "content": "Yes, I integrate AI tools like GitHub Copilot, ChatGPT, and Gemini to increase my productivity by 30-40%. This allows me to focus on architecture and business logic while speeding up repetitive tasks."
+          }
+        ]
+      },
+      {
+        "title": "Pricing & Timelines",
+        "questions": [
+          {
+            "label": "How do you bill for projects?",
+            "content": "I offer two billing methods: fixed price for projects with a well-defined scope, or time and materials (daily/hourly) for ongoing missions or evolving needs."
+          },
+          {
+            "label": "What is your daily rate?",
+            "content": "My daily rate varies according to the complexity of the project, the technologies involved, and the duration of the mission. Contact me for a personalized quote."
+          },
+          {
+            "label": "How long does a typical project take?",
+            "content": "It depends greatly on the scope. A landing page can take 1-2 weeks, a complete web application 2-4 months, and a mobile app with backend 3-6 months."
+          },
+          {
+            "label": "Do you offer maintenance after delivery?",
+            "content": "Yes, I offer maintenance contracts and ongoing support tailored to your needs. Whether for bug fixes, functional evolutions, or optimization."
+          }
+        ]
+      },
+      {
+        "title": "About Me",
+        "questions": [
+          {
+            "label": "Where are you based?",
+            "content": "I'm based in Benin and work primarily remotely with clients around the world. I'm flexible with schedules and can adapt to your timezone."
+          },
+          {
+            "label": "What are your favorite tech stacks?",
+            "content": "For web, I love working with Vue.js/Nuxt or React/Next.js on the frontend, and Django or FastAPI on the backend. For mobile, I favor Flutter. I use Tailwind CSS for styling."
+          },
+          {
+            "label": "Why did you become a developer?",
+            "content": "I love taking on the challenge of solving complex problems through code and technology. It's incredibly rewarding to see users interact with something I've created."
+          },
+          {
+            "label": "What do you do outside of coding?",
+            "content": "Outside of dev, I'm passionate about music and video games. I also enjoy discovering and testing new tools to improve my productivity."
+          }
+        ]
+      }
+    ]
   },
   "cta": {
     "title": "Have a project in mind?",
     "description": "Let's discuss your project and see how I can help bring it to life.",
     "button": "Contact me"
   },
-  "faq": {
-    "title": "Frequently Asked Questions",
-    "description": "Answers to common questions about my process and services."
+  "projects": {
+    "title": "My Projects",
+    "description": "Discover a selection of projects I've worked on, from modern web applications to cross-platform mobile solutions.",
+    "sendEmail": "Send me an email",
+    "viewSite": "View site",
+    "viewDemo": "View demo",
+    "backToProjects": "Projects",
+    "chapters": "Chapters",
+    "viewProject": "View project",
+    "hostedOnline": "This project is hosted and accessible online.",
+    "items": {
+      "europgreensolar": {
+        "title": "Europ'Green Solar",
+        "description": "Solar installation project management software aimed at optimizing and centralizing the management of different stages of a solar installation project.",
+        "link": "Live demo"
+      },
+      "nephrocare": {
+        "title": "NephroCare",
+        "description": "Web application for management and monitoring of patients with chronic kidney disease.",
+        "link": "Live demo"
+      },
+      "healthtrack": {
+        "title": "HealthTrack",
+        "description": "Mobile digital identification application for accessible and personalized healthcare with e-Signet integration.",
+        "chapters": ["Login with e-signet", "Registration", "Dashboard", "Pharmacy location", "Share via app", "Doctor interface", "Add file", "QR code scan", "Notifications"]
+      },
+      "vehix": {
+        "title": "Vehix",
+        "description": "Flutter mobile application for vehicle rental with complete reservation and payment management.",
+        "chapters": ["Login", "Dashboard", "Notifications", "Vehicle management", "Vehicle filtering and sorting", "User account creation", "Vehicle rental", "Rental management", "Settings"]
+      },
+      "collabsphere": {
+        "title": "CollabSphere",
+        "description": "Collaborative web application for project and task management with real-time notifications.",
+        "chapters": ["Presentation", "Login", "Dashboard", "Project management", "Project filtering and sorting", "Task management", "Notifications", "Collaborations", "User management"]
+      },
+      "transimpex": {
+        "title": "TRANSIMPEX",
+        "description": "Web application for transport and logistics management to optimize TransImpex Sarl operations.",
+        "link": "View site"
+      }
+    }
   },
   "footer": {
     "credits": "© 2025 Thierry Aplogan. Built with Nuxt & Nuxt UI."

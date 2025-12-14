@@ -2,58 +2,276 @@
   "nav": {
     "home": "Accueil",
     "about": "À propos",
-    "projects": "Projets",
-    "speaking": "Conférences",
-    "contact": "Contact"
+    "projects": "Projets"
+  },
+  "seo": {
+    "home": {
+      "title": "Thierry Aplogan - Développeur Full Stack",
+      "description": "Portfolio de Thierry Aplogan, développeur full-stack passionné par la création d'applications modernes et performantes."
+    },
+    "about": {
+      "title": "À propos - Thierry Aplogan",
+      "description": "Découvrez mon parcours, de l'étudiant curieux aux premières lignes de code, jusqu'à devenir développeur full-stack."
+    },
+    "projects": {
+      "title": "Projets - Thierry Aplogan",
+      "description": "Découvrez une sélection de projets sur lesquels j'ai travaillé, allant d'applications web modernes à des solutions mobiles."
+    }
   },
   "hero": {
-    "title": "Salut, je suis Thierry Aplogan",
-    "subtitle": "Développeur Full-Stack",
-    "description": "Je crée des expériences digitales qui favorisent la croissance et transforment les idées en solutions évolutives.",
+    "title": "Hey, je suis Thierry Aplogan Développeur Full Stack",
+    "description": "Je transforme des idées en applications web et mobiles performantes. Basé au Bénin, je crée des solutions digitales qui facilitent le quotidien des utilisateurs.",
     "available": "Disponible pour nouveaux projets",
     "notAvailable": "Non disponible actuellement",
-    "cta": "Me contacter"
+    "contact": "Me contacter",
+    "viewProjects": "Voir mes projets"
   },
   "about": {
     "title": "À propos",
-    "description": "Développeur full-stack passionné par la création d'applications modernes et performantes. Je combine expertise technique et créativité pour livrer des solutions qui dépassent les attentes."
-  },
-  "experience": {
-    "title": "Expérience",
-    "web": {
-      "title": "Développement Web",
-      "description": "Vue.js, Nuxt, Tailwind CSS"
+    "description": "Dev full-stack avec 3+ ans d'expérience, je transforme des idées en applications concrètes et performantes.\n\nJe me concentre sur la compréhension du problème réel, la simplification des processus, et la livraison de solutions qui facilitent vraiment le quotidien des utilisateurs. Pas de sur-ingénierie, juste du code propre et efficace qui répond au besoin.",
+    "link": "En savoir plus",
+    "page": {
+      "title": "À propos de moi",
+      "description": "Découvrez mon parcours, de l'étudiant curieux aux premières lignes de code, jusqu'à devenir développeur full-stack passionné par la création d'applications web et mobiles performantes.",
+      "intro": "Salut ! Je suis Thierry Aplogan, développeur full-stack basé au Bénin. J'ai un parcours classique d'ingénieur logiciel : formation académique solide, expériences concrètes en entreprise, et une passion grandissante pour le code.\n\nCe qui me distingue ? Je ne me contente pas d'écrire du code qui fonctionne. Je cherche à résoudre de vrais problèmes, à simplifier les processus, et à créer des solutions qui facilitent vraiment la vie des utilisateurs.",
+      "visionTitle": "Ma vision du développement",
+      "vision": "Je vois le développement comme un outil de résolution de problèmes, pas comme une fin en soi. Mon objectif est de créer des solutions simples, efficaces et maintenables qui répondent aux besoins réels des utilisateurs.\n\nL'IA m'intéresse particulièrement. Au-delà de l'utilisation quotidienne d'outils comme GitHub Copilot ou ChatGPT, je cherche à approfondir mes connaissances dans ce domaine.\n\nMa philosophie reste simple : résoudre des problèmes réels avec des solutions efficaces."
     },
-    "mobile": {
-      "title": "Développement Mobile",
-      "description": "Flutter, iOS, Android"
-    },
-    "backend": {
-      "title": "Backend",
-      "description": "Django, Python, APIs REST"
-    },
-    "ai": {
-      "title": "IA & Productivité",
-      "description": "GitHub Copilot, ChatGPT, Gemini"
+    "sections": {
+      "experiences": "Expériences professionnelles",
+      "education": "Éducation",
+      "distinctions": "Distinctions"
     }
   },
+  "experience": {
+    "title": "Expérience de travail",
+    "items": {
+      "freelance": {
+        "position": "Dev Web & Mobile Freelance",
+        "date": "2025 - Présent"
+      },
+      "polygone": {
+        "position": "Dev web full-stack",
+        "date": "2025"
+      },
+      "transimpex": {
+        "position": "Dev web backend",
+        "date": "2024"
+      }
+    }
+  },
+  "timeline": {
+    "experiences": [
+      {
+        "date": "2025 à Présent",
+        "title": "Freelance",
+        "description": [
+          "Lancement de mon activité de développement indépendant",
+          "Projets variés pour des clients internationaux (web, mobile, backend)",
+          "Collaboration sur des missions diversifiées avec des équipes à distance"
+        ]
+      },
+      {
+        "date": "2025",
+        "title": "Dev Web Full-Stack",
+        "company": "Polygone +",
+        "description": [
+          "Développement du module 'Gestion commerciale' d'un ERP Web",
+          "Intégration de l'API du MECEF pour la normalisation des factures",
+          "Gestion complète d'un module critique de bout en bout"
+        ]
+      },
+      {
+        "date": "2024",
+        "title": "Dev Web Backend",
+        "company": "Transimpex BJ",
+        "description": [
+          "Participation à la conception d'une plateforme interne de gestion logistique",
+          "Développement d'APIs REST avec Django et Django REST Framework",
+          "Travail en équipe sur un projet d'envergure avec des contraintes réelles"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "date": "2025",
+        "title": "Licence en Génie Logiciel",
+        "company": "Institut de Formation et de Recherche en Informatique (IFRI)",
+        "description": [
+          "Formation complète en développement web (frontend & backend), mobile et desktop",
+          "Gestion de projet, modélisation UML et administration de bases de données",
+          "Apprentissage des fondamentaux : mathématiques, logique, algorithmique, structures de données"
+        ]
+      },
+      {
+        "date": "2022",
+        "title": "Baccalauréat Scientifique",
+        "description": []
+      }
+    ],
+    "distinctions": [
+      {
+        "date": "2025",
+        "title": "Hackathon LevelUp - 2e place",
+        "company": "AFG Assurance & Future Studio",
+        "description": [
+          "Challenge : améliorer l'expérience de souscription d'assurance mobile",
+          "Solution développée : OCR pour extraction automatique des données",
+          "Chatbot IA pour guider les utilisateurs",
+          "Équipe de 4 (2 designers, 2 devs) - Rôle : Dev Backend"
+        ]
+      }
+    ]
+  },
   "testimonials": {
-    "title": "Témoignages Clients"
+    "title": "Témoignages Clients",
+    "items": [
+      {
+        "quote": "Thierry a transformé notre vision en une application web robuste et moderne. Son expertise technique en Vue.js et Django nous a permis de lancer notre plateforme en temps record. Il comprend vraiment les besoins métier et propose des solutions pragmatiques.",
+        "author": {
+          "name": "Mr Marius",
+          "description": "CEO - Transimpex BJ"
+        }
+      },
+      {
+        "quote": "L'application de gestion médicale développée par Thierry a considérablement amélioré notre efficacité. Interface intuitive, performances excellentes, et un suivi patient qui répond parfaitement à nos besoins. Un professionnel fiable et à l'écoute.",
+        "author": {
+          "name": "Dr. Sarah Okonkwo",
+          "description": "Néphrologue - NephroCare Clinic"
+        }
+      },
+      {
+        "quote": "Travailler avec Thierry a été un vrai plaisir. Il a su traduire nos maquettes en une application Flutter performante et élégante. Son utilisation des outils IA comme GitHub Copilot lui permet une productivité impressionnante sans sacrifier la qualité.",
+        "author": {
+          "name": "Alexandre Martin",
+          "description": "Product Manager - Vehix"
+        }
+      }
+    ]
   },
   "techStack": {
     "title": "Stack Technique",
     "description": "Les technologies que j'utilise au quotidien pour créer des solutions performantes.",
     "languages": "Langages",
-    "frameworksLibs": "Frameworks & Bibliothèques"
+    "frameworksLibs": "Frameworks & Bibliothèques",
+    "discoverProjects": "Découvrir mes projets"
+  },
+  "faq": {
+    "title": "Questions Fréquentes",
+    "description": "Réponses aux questions courantes sur mes services et mon processus.",
+    "categories": [
+      {
+        "title": "Services & Processus",
+        "questions": [
+          {
+            "label": "Quels types de projets réalisez-vous ?",
+            "content": "Je me spécialise dans le développement d'applications web modernes (Vue.js, Nuxt, React, Next.js), d'applications mobiles multiplateformes (Flutter), et de backends robustes (Django, FastAPI, Laravel). Je peux prendre en charge un projet de A à Z ou intervenir sur des besoins spécifiques."
+          },
+          {
+            "label": "Comment se déroule votre processus de développement ?",
+            "content": "Mon processus est collaboratif et itératif : analyse des besoins, conception technique, développement avec revues régulières, tests approfondis, puis déploiement. J'adapte ma méthode selon la taille et les contraintes du projet."
+          },
+          {
+            "label": "Travaillez-vous avec des startups ?",
+            "content": "Absolument ! J'apprécie particulièrement aider les startups à concrétiser leur vision produit. Je sais m'adapter au rythme rapide et aux pivots fréquents, tout en gardant un code maintenable pour la croissance future."
+          },
+          {
+            "label": "Utilisez-vous l'IA dans votre travail ?",
+            "content": "Oui, j'intègre des outils d'IA comme GitHub Copilot, ChatGPT et Gemini pour augmenter ma productivité de 30-40%. Cela me permet de me concentrer sur l'architecture et la logique métier tout en accélérant les tâches répétitives."
+          }
+        ]
+      },
+      {
+        "title": "Tarifs & Délais",
+        "questions": [
+          {
+            "label": "Comment facturez-vous vos projets ?",
+            "content": "Je propose deux modes de facturation : au forfait pour les projets avec un périmètre bien défini, ou en régie (journalier/horaire) pour les missions en cours ou avec des besoins évolutifs."
+          },
+          {
+            "label": "Quel est votre tarif journalier ?",
+            "content": "Mon TJM (Taux Journalier Moyen) varie selon la complexité du projet, les technologies impliquées et la durée de la mission. Contactez-moi pour obtenir un devis personnalisé."
+          },
+          {
+            "label": "Combien de temps prend un projet type ?",
+            "content": "Cela dépend énormément du périmètre. Une landing page peut prendre 1-2 semaines, une application web complète 2-4 mois, et une app mobile avec backend 3-6 mois."
+          },
+          {
+            "label": "Proposez-vous de la maintenance après livraison ?",
+            "content": "Oui, je propose des contrats de maintenance et de support continu adaptés à vos besoins. Que ce soit pour des corrections de bugs, des évolutions fonctionnelles ou de l'optimisation."
+          }
+        ]
+      },
+      {
+        "title": "À propos de moi",
+        "questions": [
+          {
+            "label": "Où êtes-vous basé ?",
+            "content": "Je suis basé au Bénin et je travaille principalement en remote avec des clients partout dans le monde. Je suis flexible sur les horaires et peux m'adapter à votre fuseau horaire."
+          },
+          {
+            "label": "Quelles sont vos stack techniques préférées ?",
+            "content": "Pour le web, j'adore travailler avec Vue.js/Nuxt ou React/Next.js côté frontend, et Django ou FastAPI côté backend. Pour le mobile, je privilégie Flutter. J'utilise Tailwind CSS pour le styling."
+          },
+          {
+            "label": "Pourquoi être devenu développeur ?",
+            "content": "J'aime relever le défi de résoudre des problèmes complexes à travers le code et la technologie. C'est incroyablement gratifiant de voir des utilisateurs interagir avec quelque chose que j'ai créé."
+          },
+          {
+            "label": "Que faites-vous en dehors du code ?",
+            "content": "En dehors du dev, je suis passionné de musique et de jeux vidéos. J'aime aussi découvrir et tester de nouveaux outils pour améliorer ma productivité."
+          }
+        ]
+      }
+    ]
   },
   "cta": {
     "title": "Un projet en tête ?",
     "description": "Discutons de votre projet et voyons comment je peux vous aider à le concrétiser.",
     "button": "Me contacter"
   },
-  "faq": {
-    "title": "Questions Fréquentes",
-    "description": "Réponses aux questions courantes sur mes services et mon processus."
+  "projects": {
+    "title": "Mes Projets",
+    "description": "Découvrez une sélection de projets sur lesquels j'ai travaillé, allant d'applications web modernes à des solutions mobiles multiplateformes.",
+    "sendEmail": "M'envoyer un email",
+    "viewSite": "Voir le site",
+    "viewDemo": "Voir la démo",
+    "backToProjects": "Projets",
+    "chapters": "Chapitres",
+    "viewProject": "Voir le projet",
+    "hostedOnline": "Ce projet est hébergé et accessible en ligne.",
+    "items": {
+      "europgreensolar": {
+        "title": "Europ'Green Solar",
+        "description": "Logiciel de gestion des projets d'installation solaire visant à optimiser et à centraliser la gestion des différentes étapes d'un projet d'installation solaire.",
+        "link": "Démo en ligne"
+      },
+      "nephrocare": {
+        "title": "NephroCare",
+        "description": "Application web de gestion et suivi des patients atteints de maladie rénale chronique.",
+        "link": "Démo en ligne"
+      },
+      "healthtrack": {
+        "title": "HealthTrack",
+        "description": "Application mobile d'identification numérique pour des soins de santé accessibles et personnalisés avec intégration e-Signet.",
+        "chapters": ["Connexion avec e-signet", "Inscription", "Tableau de bord", "Localisation des pharmacies", "Partage via l'application", "Interface médecin", "Ajout de fichier", "Scan code QR", "Notifications"]
+      },
+      "vehix": {
+        "title": "Vehix",
+        "description": "Application mobile Flutter de location de véhicules avec gestion complète des réservations et paiements.",
+        "chapters": ["Connexion", "Tableau de bord", "Notifications", "Gestion des véhicules", "Tri et filtrage des véhicules", "Création de compte utilisateur", "Location de véhicule", "Gestion des locations", "Paramètres"]
+      },
+      "collabsphere": {
+        "title": "CollabSphere",
+        "description": "Application web collaborative de gestion de projets et tâches en équipe avec notifications en temps réel.",
+        "chapters": ["Présentation", "Connexion", "Tableau de bord", "Gestion des projets", "Tri et filtrage des projets", "Gestion des tâches", "Notifications", "Collaborations", "Gestion des utilisateurs"]
+      },
+      "transimpex": {
+        "title": "TRANSIMPEX",
+        "description": "Application web de gestion de transport et logistique pour optimiser les opérations de TransImpex Sarl.",
+        "link": "Voir le site"
+      }
+    }
   },
   "footer": {
     "credits": "© 2025 Thierry Aplogan. Développé avec Nuxt & Nuxt UI."

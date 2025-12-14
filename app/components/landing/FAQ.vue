@@ -1,16 +1,18 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
+const { t, tm } = useI18n()
 
-const props = defineProps<{
-  page: IndexCollectionItem
-}>()
-
+// Obtenir les catégories FAQ traduites
 const items = computed(() => {
-  return props.page.faq?.categories.map((faq) => {
+  const categories = tm('faq.categories') as any[]
+  return categories.map((cat, catIndex) => {
+    const questions = tm(`faq.categories.${catIndex}.questions`) as any[]
     return {
-      label: faq.title,
-      key: faq.title.toLowerCase(),
-      questions: faq.questions
+      label: t(`faq.categories.${catIndex}.title`),
+      key: `category-${catIndex}`,
+      questions: questions.map((_, qIndex) => ({
+        label: t(`faq.categories.${catIndex}.questions.${qIndex}.label`),
+        content: t(`faq.categories.${catIndex}.questions.${qIndex}.content`)
+      }))
     }
   })
 })
@@ -26,8 +28,8 @@ const ui = {
 
 <template>
   <UPageSection
-    :title="page.faq.title"
-    :description="page.faq.description"
+    :title="t('faq.title')"
+    :description="t('faq.description')"
     :ui="{
       container: 'px-0 !pt-0 gap-4 sm:gap-4',
       title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
@@ -51,11 +53,9 @@ const ui = {
           }"
         >
           <template #body="{ item: _item }">
-            <MDC
-              :value="_item.content"
-              unwrap="p"
-              class="px-4"
-            />
+            <p class="px-4 text-muted">
+              {{ _item.content }}
+            </p>
           </template>
         </UAccordion>
       </template>

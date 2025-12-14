@@ -1,14 +1,33 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
-
+const { t } = useI18n()
 const colorMode = useColorMode()
 
-defineProps<{
-  page: IndexCollectionItem
-}>()
+// Données des entreprises avec leurs couleurs
+const companies = {
+  upwork: { name: 'Upwork', url: 'https://www.upwork.com/freelancers/thierrya?mp_source=share', color: '#FFFFFF' },
+  polygone: { name: 'Polygone +', url: '#', color: '#E0AD78' },
+  transimpex: { name: 'Transimpex BJ', url: '#', color: '#5088A1' }
+}
+
+const experiences = computed(() => [
+  {
+    position: t('experience.items.freelance.position'),
+    date: t('experience.items.freelance.date'),
+    company: companies.upwork
+  },
+  {
+    position: t('experience.items.polygone.position'),
+    date: t('experience.items.polygone.date'),
+    company: companies.polygone
+  },
+  {
+    position: t('experience.items.transimpex.position'),
+    date: t('experience.items.transimpex.date'),
+    company: companies.transimpex
+  }
+])
 
 const getCompanyColor = (company: any) => {
-  // Si c'est Upwork (blanc), adapter selon le mode
   if (company.color === '#FFFFFF' || company.color === '#FFF') {
     return colorMode.value === 'dark' ? '#FFFFFF' : '#000000'
   }
@@ -18,7 +37,7 @@ const getCompanyColor = (company: any) => {
 
 <template>
   <UPageSection
-    :title="page.experience.title"
+    :title="t('experience.title')"
     :ui="{
       container: '!p-0 gap-4 sm:gap-4',
       title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
@@ -28,7 +47,7 @@ const getCompanyColor = (company: any) => {
     <template #description>
       <div class="flex flex-col gap-2">
         <Motion
-          v-for="(experience, index) in page.experience.items"
+          v-for="(experience, index) in experiences"
           :key="index"
           :initial="{ opacity: 0, transform: 'translateY(20px)' }"
           :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
@@ -48,9 +67,7 @@ const getCompanyColor = (company: any) => {
             <span class="text-sm">
               {{ experience.position }}
             </span>
-            <div
-              class="inline-flex items-center gap-2"
-            >
+            <div class="inline-flex items-center gap-2">
               <ClientOnly>
                 <span class="font-medium" :style="{ color: getCompanyColor(experience.company) }">
                   {{ experience.company.name }}

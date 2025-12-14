@@ -1,9 +1,17 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
+const { t, tm, te } = useI18n()
 
-defineProps<{
-  page: IndexCollectionItem
-}>()
+// Obtenir les témoignages traduits
+const testimonials = computed(() => {
+  const items = tm('testimonials.items') as any[]
+  return items.map((_, index) => ({
+    quote: t(`testimonials.items.${index}.quote`),
+    author: {
+      name: t(`testimonials.items.${index}.author.name`),
+      description: t(`testimonials.items.${index}.author.description`)
+    }
+  }))
+})
 </script>
 
 <template>
@@ -14,7 +22,7 @@ defineProps<{
   >
     <UCarousel
       v-slot="{ item }"
-      :items="page.testimonials"
+      :items="testimonials"
       :autoplay="{ delay: 5000 }"
       loop
       dots

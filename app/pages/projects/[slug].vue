@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const { t, tm } = useI18n()
 const route = useRoute()
 const slug = route.params.slug as string
 
@@ -9,6 +10,24 @@ const { data: allProjects } = await useAsyncData(`projects-all`, () => {
 const project = computed(() => {
     if (!allProjects.value) return null
     return allProjects.value.find(p => p.slug === slug)
+})
+
+// Récupérer les traductions du projet
+const projectTitle = computed(() => t(`projects.items.${slug}.title`))
+const projectDescription = computed(() => t(`projects.items.${slug}.description`))
+const projectChapters = computed<Array<{ title: string; time: number }>>(() => {
+    // Les chapitres traduits (titres uniquement)
+    const translatedChapters = tm(`projects.items.${slug}.chapters`) as any[]
+    // Les chapitres du YAML (avec les times)
+    const yamlChapters = project.value?.chapters || []
+    
+    if (!translatedChapters || !Array.isArray(translatedChapters)) return yamlChapters
+    
+    // Combiner les titres traduits avec les times du YAML
+    return translatedChapters.map((_, index) => ({
+        title: t(`projects.items.${slug}.chapters.${index}`),
+        time: Number(yamlChapters[index]?.time || 0)
+    }))
 })
 
 // État du lecteur vidéo
@@ -80,10 +99,10 @@ const toggleFullscreen = () => {
 watchEffect(() => {
     if (project.value) {
         useSeoMeta({
-            title: project.value.title,
-            ogTitle: project.value.title,
-            description: project.value.description,
-            ogDescription: project.value.description,
+            title: projectTitle.value,
+            ogTitle: projectTitle.value,
+            description: projectDescription.value,
+            ogDescription: projectDescription.value,
             ogImage: project.value.cover
         })
     }
@@ -97,7 +116,7 @@ watchEffect(() => {
             <a href="/projects"
                 class="focus-visible:outline-primary text-muted hover:text-default transition-colors text-sm flex items-center gap-1">
                 <UIcon name="i-lucide-chevron-left" class="size-4" />
-                Projets
+                {{ t('projects.backToProjects') }}
             </a>
         </div>
 
@@ -105,8 +124,8 @@ watchEffect(() => {
         <div class="mb-12">
             <div class="flex items-start justify-between gap-6 mb-6">
                 <div class="flex-1">
-                    <h1 class="text-4xl font-bold mb-3">{{ project.title }}</h1>
-                    <p class="text-lg text-muted">{{ project.description }}</p>
+                    <h1 class="text-4xl font-bold mb-3">{{ projectTitle }}</h1>
+                    <p class="text-lg text-muted">{{ projectDescription }}</p>
                 </div>
                 <UBadge :label="project.type" size="lg" color="primary" variant="subtle" class="shrink-0" />
             </div>
@@ -126,7 +145,7 @@ watchEffect(() => {
 
                 <!-- Contrôles overlay -->
                 <div
-                    class="absolute inset-0 bg-gradient-to-t from-neutral-950/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+                    class="absolute inset-0 bg-linear-to-t from-neutral-950/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
                     <div class="absolute bottom-0 left-0 right-0 p-4 pointer-events-auto space-y-3">
                         <!-- Timeline -->
                         <input v-model="currentTime" type="range" min="0" :max="duration"
@@ -158,19 +177,19 @@ watchEffect(() => {
             </div>
 
             <!-- Chapitres en dessous -->
-            <div v-if="project.chapters">
-                <h3 class="text-sm font-semibold mb-4 text-muted uppercase tracking-wide">Chapitres</h3>
+            <div v-if="projectChapters.length > 0">
+                <h3 class="text-sm font-semibold mb-4 text-muted uppercase tracking-wide">{{ t('projects.chapters') }}</h3>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
-                    <button v-for="(chapter, index) in project.chapters" :key="index"
+                    <button v-for="(chapter, index) in projectChapters" :key="index"
                         class="text-left px-3 py-2.5 rounded-md transition-colors group" 
-                        :class="currentTime >= chapter.time && (index === (project.chapters?.length ?? 0) - 1 || currentTime < (project.chapters?.[index + 1]?.time ?? Infinity))
+                        :class="currentTime >= chapter.time && (index === projectChapters.length - 1 || currentTime < (projectChapters[index + 1]?.time ?? Infinity))
                             ? 'bg-primary/5 border border-primary/20'
                             : 'hover:bg-elevated border border-transparent'" 
                         @click="jumpToChapter(chapter.time)">
                         <div class="flex items-start gap-2">
                             <UIcon name="i-lucide-circle-play"
                                 class="size-3.5 shrink-0 mt-0.5 transition-transform group-hover:scale-110" 
-                                :class="currentTime >= chapter.time && (index === (project.chapters?.length ?? 0) - 1 || currentTime < (project.chapters?.[index + 1]?.time ?? Infinity))
+                                :class="currentTime >= chapter.time && (index === projectChapters.length - 1 || currentTime < (projectChapters[index + 1]?.time ?? Infinity))
                                     ? 'text-primary'
                                     : 'text-muted'" />
                             <div class="flex-1 min-w-0">
@@ -188,8 +207,8 @@ watchEffect(() => {
             <div class="px-6 py-5 rounded-lg border border-border bg-elevated/50">
                 <div class="flex items-center justify-between gap-6">
                     <div>
-                        <h3 class="font-semibold mb-1">Voir le projet</h3>
-                        <p class="text-sm text-muted">Ce projet est hébergé et accessible en ligne.</p>
+                        <h3 class="font-semibold mb-1">{{ t('projects.viewProject') }}</h3>
+                        <p class="text-sm text-muted">{{ t('projects.hostedOnline') }}</p>
                     </div>
                     <UButton v-for="link in project.links" :key="link.to" :label="link.label" :to="link.to"
                         :icon="link.icon" color="primary" target="_blank" external />

@@ -19,6 +19,7 @@ useSeoMeta({
   description: 'We are sorry but this page could not be found.'
 })
 
+const navLinks = useNavLinks()
 const navigation = ref([])
 const files = ref([])
 </script>

@@ -119,7 +119,7 @@ const frameworks = [
           to="/projects"
           class="inline-flex items-center gap-1 text-sm text-primary font-medium hover:underline underline-offset-4"
         >
-          Découvrir mes projets
+          {{ t('techStack.discoverProjects') }}
           <UIcon name="i-lucide-arrow-right" class="size-4" />
         </ULink>
       </Motion>
